@@ -1,0 +1,15 @@
+/** Distributed.stenv 
+
+    Description for distributed environment.
+    
+    Using this description will include Distributed Object finder.
+    
+ */
+
+{
+    Name = "Distributed";
+
+    Finders = (DistributedFinder);
+    
+    Use = ("Foundation");
+}

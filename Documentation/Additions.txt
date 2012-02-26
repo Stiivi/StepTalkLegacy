@@ -1,0 +1,25 @@
+GNUstep/Cocoa classes additions
+-------------------------------
+
+NSFileManager
+    + (NSString *)homeDirectory
+
+    + (NSString *)homeDirectoryForUser:(NSString *)user
+
+    + (NSString *)openStepRootDirectory
+
+    + (NSArray *)searchPathForDirectories:(int)dir 
+                                inDomains:(int)domainMask
+                              expandTilde:(BOOL)flag
+
+    + (NSArray *)searchPathForDirectories:(int)dir inDomains:(int)domainMask
+
+    + (NSString *)temporaryDirectory
+
+    + (NSArray *)standardLibraryPaths
+
+Example:
+    NSFileManager searchPathForDirectories:NSLibraryDirectory 
+                inDomains:(NSUserDomainMask or: NSLocalDomainMask)
+                
+                

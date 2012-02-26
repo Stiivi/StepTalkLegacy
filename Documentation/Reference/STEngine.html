@@ -1,0 +1,97 @@
+<html>
+
+    <head>
+    <title>STEngine class documentation</title>
+  </head>
+  <body>
+    <font face="serif">
+    <a href="StepTalk.html">Up</a>
+    <br />
+    <h1><a name="title$STEngine">STEngine class documentation</a></h1>
+    <h3>Authors</h3>
+    <dl>
+      <dt>Stefan Urbanek</dt>
+      <dd>
+      </dd>
+    </dl>
+    <p><b>Copyright:</b> (C) 2002 Free Software Foundation</p>
+
+        <div>
+    </div>
+
+          <h1><a name="001000000000">
+        Software documentation for the STEngine class
+      </a></h1>
+    <h2><a name="class$STEngine">STEngine</a> : NSObject</h2>
+    <blockquote>
+      <dl>
+        <dt><b>Declared in:</b></dt>
+        <dd>StepTalk/STEngine.h</dd>
+      </dl>
+    </blockquote>
+    <p>
+      
+          STEngine is abstract class for language engines used
+          to intepret scripts.
+        
+    </p>
+    <b>Method summary</b>
+    <ul>
+      <li><a rel="gsdoc" href="STEngine.html#method$STEngine+engineForLanguage:">+engineForLanguage:</a></li>
+      <li><a rel="gsdoc" href="STEngine.html#method$STEngine-executeMethod:forReceiver:withArguments:inContext:">-executeMethod:forReceiver:withArguments:inContext:</a></li>
+      <li><a rel="gsdoc" href="STEngine.html#method$STEngine-interpretScript:inContext:">-interpretScript:inContext:</a></li>
+      <li><a rel="gsdoc" href="STEngine.html#method$STEngine-methodFromSource:forReceiver:inContext:">-methodFromSource:forReceiver:inContext:</a></li>
+      <li><a rel="gsdoc" href="STEngine.html#method$STEngine-understandsCode:">-understandsCode:</a></li>
+    </ul>
+    <hr width="50%" align="left" />
+    <h3><a name="method$STEngine+engineForLanguage:">engineForLanguage:&nbsp;</a></h3>
+    + (<a rel="gsdoc" href="#class$STEngine">STEngine</a>*) <b>engineForLanguage:</b> (NSString*)name;<br />
+    <p>
+      
+            Instance creation <br /> Return a scripting engine
+            for language with specified <var>name</var>. The engine
+            is get from default language manager.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STEngine-executeMethod:forReceiver:withArguments:inContext:">executeMethod:&nbsp;forReceiver:&nbsp;withArguments:&nbsp;inContext:&nbsp;</a></h3>
+    - (id) <b>executeMethod:</b> (id<<a rel="gsdoc" href="STMethod.html#protocol$(STMethod)">STMethod</a>>)aMethod<b> forReceiver:</b> (id)anObject<b> withArguments:</b> (NSArray*)args<b> inContext:</b> (<a rel="gsdoc" href="STContext.html#class$STContext">STContext</a>*)env;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STEngine-interpretScript:inContext:">interpretScript:&nbsp;inContext:&nbsp;</a></h3>
+    - (id) <b>interpretScript:</b> (NSString*)script<b> inContext:</b> (<a rel="gsdoc" href="STContext.html#class$STContext">STContext</a>*)context;<br />
+Subclasses <strong>should</strong> override this method.<br />
+    <p>
+      
+            Interpret source code <var>code</var> in a
+            <var>context</var> <var>context</var>. This is the
+            method, that has to be implemented by those who are
+            writing a language engine.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STEngine-methodFromSource:forReceiver:inContext:">methodFromSource:&nbsp;forReceiver:&nbsp;inContext:&nbsp;</a></h3>
+    - (STMethod*) <b>methodFromSource:</b> (NSString*)sourceString<b> forReceiver:</b> (id)receiver<b> inContext:</b> (<a rel="gsdoc" href="STContext.html#class$STContext">STContext</a>*)env;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STEngine-understandsCode:">understandsCode:&nbsp;</a></h3>
+    - (BOOL) <b>understandsCode:</b> (NSString*)code;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <br />
+    <a href="StepTalk.html">Up</a>
+    </font>
+</body>
+</html>

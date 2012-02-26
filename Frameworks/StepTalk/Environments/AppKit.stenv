@@ -1,0 +1,17 @@
+/** AppKit.stenv 
+
+    Description for AppKit environment.
+    
+    Using this description will include Application Kit objects and
+    Application finder.
+ */
+
+{
+    Name = "AppKit";
+
+    Modules = (AppKit);
+    Finders = (ApplicationFinder);
+
+    Use = (Foundation);
+
+}

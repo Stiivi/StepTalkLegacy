@@ -1,0 +1,19 @@
+#!/bin/csh
+#
+# gdbstexec - GDB wrapper for stexec
+#
+# Put this file to be reachable from your PATH
+# 
+# Use like stexec:
+#        gdbstexec script_name ...
+# This will run stexec in gdb and run it with script script_name. After
+# finishing, backtrace is displayed
+#
+ 
+
+# set temp = `tempfile -p stexec`
+# echo set args $*:q > $temp
+# echo run >> $temp
+# echo bt >> $temp
+gdb --args `which stexec` $*:q
+# rm $temp

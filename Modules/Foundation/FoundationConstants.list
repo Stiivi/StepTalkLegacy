@@ -1,0 +1,188 @@
+# Objective-C constants
+int NO
+int YES
+
+# Foundation constants
+
+NSPoint NSZeroPoint
+NSSize  NSZeroSize
+NSRect  NSZeroRect
+
+int NSOrderedAscending
+int NSOrderedSame
+int NSOrderedDescending
+int NSNotFound
+
+int NSMinXEdge
+int NSMinYEdge
+int NSMaxXEdge
+int NSMaxYEdge
+
+int NS_UnknownByteOrder
+int NS_LittleEndian
+int NS_BigEndian
+
+int NSOpenStepUnicodeReservedBase
+
+int NSCaseInsensitiveSearch
+int NSLiteralSearch
+int NSBackwardsSearch
+int NSAnchoredSearch
+
+# Language defs keys
+
+id NSAMPMDesignation
+id NSCurrencyString
+id NSCurrencySymbol
+id NSDateFormatString
+id NSDateTimeOrdering
+id NSDecimalDigits
+id NSDecimalSeparator
+id NSEarlierTimeDesignations
+id NSHourNameDesignations
+id NSInternationalCurrencyString
+id NSLaterTimeDesignations
+id NSMonthNameArray
+id NSNextDayDesignations
+id NSNextNextDayDesignations
+id NSPriorDayDesignations
+id NSShortMonthNameArray
+id NSShortTimeDateFormatString
+id NSShortWeekDayNameArray
+id NSThisDayDesignations
+id NSThousandsSeparator
+id NSTimeDateFormatString
+id NSTimeFormatString
+id NSWeekDayNameArray
+id NSYearMonthWeekDesignations
+
+
+# File / File System attributes
+
+id NSFileDeviceIdentifier
+id NSFileGroupOwnerAccountID
+id NSFileModificationDate
+id NSFileOwnerAccountID
+id NSFilePosixPermissions
+id NSFileReferenceCount
+id NSFileSize
+id NSFileSystemFileNumber
+id NSFileSystemNumber
+id NSFileType
+id NSFileTypeBlockSpecial
+id NSFileTypeCharacterSpecial
+id NSFileTypeDirectory
+id NSFileTypeRegular
+id NSFileTypeSocket
+id NSFileTypeSymbolicLink
+id NSFileTypeUnknown
+
+id NSFileSystemSize
+id NSFileSystemFreeSize
+id NSFileSystemNodes
+id NSFileSystemFreeNodes
+
+
+# ObjC types
+
+# FIXME: It seeems, that they are not defined anywhere
+
+# int NSObjCNoType
+# int NSObjCVoidType
+# int NSObjCCharType
+# int NSObjCShortType
+# int NSObjCLongType
+# int NSObjCLonglongType
+# int NSObjCFloatType
+# int NSObjCDoubleType
+# int NSObjCSelectorType
+# int NSObjCObjectType
+# int NSObjCStructType
+# int NSObjCPointerType
+# int NSObjCStringType
+# int NSObjCArrayType
+# int NSObjCUnionType
+# int NSObjCBitfield
+
+
+# String encodings
+
+int NSASCIIStringEncoding
+int NSISO2022JPStringEncoding
+int NSISOLatin1StringEncoding
+int NSISOLatin2StringEncoding
+int NSJapaneseEUCStringEncoding
+int NSNEXTSTEPStringEncoding
+int NSNonLossyASCIIStringEncoding
+int NSShiftJISStringEncoding
+int NSSymbolStringEncoding
+int NSUTF8StringEncoding
+int NSUnicodeStringEncoding
+int NSWindowsCP1250StringEncoding
+int NSWindowsCP1251StringEncoding
+int NSWindowsCP1252StringEncoding
+int NSWindowsCP1253StringEncoding
+int NSWindowsCP1254StringEncoding
+
+
+# Exception names
+
+id NSInconsistentArchiveException
+# id NSByteStoreLockedException
+# id NSByteStoreVersionException
+# id NSBTreeStoreKeyTooLargeException
+# id NSByteStoreDamagedException
+# id NSPosixFileOperationException
+id NSCharacterConversionException
+# id NSDestinationInvalidException
+id NSGenericException
+id NSInternalInconsistencyException
+id NSInvalidArgumentException
+# id NSInvalidReceivePort
+# id NSInvalidReceivePortException
+# id NSInvalidSendPort
+# id NSInvalidSendPortException
+id NSMallocException
+# id NSObjectInaccessibleException
+# id NSObjectNotAvailableException
+# id NSOldStyleException
+# id NSPortReceiveError
+# id NSPortReceiveException
+# id NSPortSendError
+# id NSPortSendException
+id NSPortTimeoutException
+id NSRangeException
+id NSFailedAuthenticationException
+
+
+# Notification names
+
+# id NSBundleLoaded
+id NSConnectionDidDieNotification
+id NSPortDidBecomeInvalidNotification
+# id NSPPLDidBecomeDirtyNotification
+# id NSPPLDidSaveNotification
+id NSBecomingMultiThreaded
+id NSThreadExiting
+id NSGlobalDomain
+id NSArgumentDomain
+id NSRegistrationDomain
+
+int NSApplicationDirectory
+int NSDemoApplicationDirectory
+int NSDeveloperApplicationDirectory
+int NSAdminApplicationDirectory
+int NSLibraryDirectory
+int NSDeveloperDirectory
+int NSUserDirectory
+int NSDocumentationDirectory
+int NSAllApplicationsDirectory
+int NSAllLibrariesDirectory
+int GSLibrariesDirectory
+int GSToolsDirectory
+
+int NSUserDomainMask
+int NSLocalDomainMask
+int NSNetworkDomainMask
+int NSSystemDomainMask
+int NSAllDomainsMask

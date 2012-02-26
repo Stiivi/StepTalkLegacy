@@ -1,0 +1,183 @@
+There was an idea to create general - language independent scripting
+framework for GNUstep. Here is a sketch of such framework. 
+
+Idea is to have applications, that can execute scripts or just one-line
+statements in any available scripting language. 
+
+Scripting Environment
+---------------------
+
+An application will prepare scripting environment by making some of apps
+objects available by some name. 
+
+ex.:
+	STEnvironment *env;
+	
+	[env addObject:mail withName:@"mail"];
+	[env addObject:[mail subject] withName:@"subject"];
+	[env addObject:[mail receiver] withName:@"receiver"];
+
+
+
+Environment is something like language context, where script is being
+executed. There are objects registered by name, so you can use them from your
+script. Your application can have several environments. For example, one for
+each document, mail...
+
+ex. (Example is going to be a mail filter. Let mail filter by a association
+between mailbox and a expression. Whe expression is true, mail goes to that
+mailbox.):
+
+    receiver == 'gnustep-dicuss@gnu.org'
+
+or something like this:
+
+    addressBook emailAddressesForGroupWithName:'firends'
+                                      contains:receiver
+
+Also, scripting environment contains method name alias/restriction. For
+example, I've used method aliases to map Smalltalk bynary selectors to
+gnustep methods, like when sending selector '@' to NSArray, it is translated
+to 'objectAtIndex:'. With method restriction, you can deny some methods to a
+class. This can be used to prevent creating script viruses. Your application
+just denies methods of some classes not available for scripting. For example,
+you can deny method for deleting files, allocating some kinds of objects...
+This can be enabled or disabled, when it is disabled, I call it full
+scripting - you can send any message to any kind of object. Application can
+have environment description(s) in a file (example attached) or it can
+allow/deny by 'hand' using STEnvironments:
+
+  - denySelector:forObjectsOfType:
+  - allowSelector:forObjectsOfType:
+  - denyAllSelectorsForObjectOfType:
+  - allowAllSelectorsForObjectOfType:
+
+Scripting Engine
+----------------
+
+Scripting engine is used for executing scripts.
+
+ex.: 
+
+	STEgnine *engine /* say we already have this */;
+     ...
+     
+    engine = [STEngine engineForLanguage:@"Smalltalk"];
+    
+    [engine   executeCode:filter 
+             inEnvironment:[activeMail scriptingEnvironment]];
+     ...
+
+
+Engine and Languages
+--------------------
+The idea was, as also Lyndon mentioned before, to have "bundled languages".
+Engine will load appropriate bundle for language, that is actualy needed. 
+
+Application does not have to know anything about scripting languages. It is
+the matter of user. But, user has to be able to specify the language used for
+scripting in application. Or...there sould be a language autodetection. 
+
+The interface between Engine and backend (bundled language)
+
+- executeCode:inEnvironment:
+
+- understandsCode: /* can be used for language auto-detection when language is
+nil or @"" or @"auto"... */
+
+Scripting framework does not care, if the language is compiled, or directly
+interpreted.
+
+Language backend will just execute a script and send messages to objects. It
+can use environment to get the real selector:
+
+    STEnvironment *environment; /* we have this ... */
+    id             target;      /* ... and also this */
+    NSString      *selector;
+    ...
+    selector = [environment translateSelector:selector forReceiver:target];
+
+    
+    invocation = [NSInvocation invocationWithTarget:target
+                                       selectorName:selector];
+                                       
+    ... /* set arguments */ ...
+    [invocation invoke];
+
+For larger example see source STBytecodeInterpreter.m in Smalltalk language 
+module, method:
+    - (void)sendSelectorAtIndex:(unsigned)selIndex 
+                   withArgCount:(unsigned)argCount
+
+
+In StepTalk there already some additions, that can be used:
+
+NSInvocation
+- (void)setArgumentAsObject:(id)anObject atIndex:(int)anIndex
+- (id)getArgumentAsObjectAtIndex:(int)anIndex
+- (id)returnValueAsObject
+
+These two methods are converting between GNUstep objects (NSNumber,
+NSString,...) and simple C types (int, char *, ...)
+
+
+Languages and Language Bundles
+------------------------------
+
+Language bundles can be stored in
+
+*_GNUSTEP_ROOT/Library/Scripting/Languages
+
+It will be good, if there will be some kind of description of that language,
+language aliases (objc, objective-c, objectivec,...)
+
+Defaults
+--------
+Suggested defaults:
+
+STFullScripting (bool) - enable full scripting by default for all apps
+STDefaultsScriptingLanguage - default scripting language
+
+
+Remote scripting
+-----------------
+The idea is to script application/server remotely. You connect to scripted
+object, where an new scripting environment is created. Script is executed in
+that environment. Application may customize the environment depending on the
+caller or may limit number of scripting connections, etc... 
+
+The method should be
+-	remoteScriptingEngine
+or there should be some authentification of caller.
+
+Summary
+-------
+Application developers:
+
+  STEnvironment interface
+      - addObject:anObject withName:(NSString *)name
+
+      - denySelector:forObjectsOfType:
+      - allowSelector:forObjectsOfType:
+      - denyAllSelectorsForObjectOfType:
+      - allowAllSelectorsForObjectOfType:
+
+   OR
+
+      environment description file(s)
+
+  STEngine interface
+
+      + engineForLanguageWithName:(NSString *)name
+
+      -   executeCode:(NSString *)code 
+        inEnvironment:(STScriptingEnvironment *) env
+
+Language backend developers:
+
+  STEnvironment interface
+      - translateSelector:forReceiver:
+
+  They have to implement theese methods:
+      - executeCode:inEnvironment:
+      - understandsCode:

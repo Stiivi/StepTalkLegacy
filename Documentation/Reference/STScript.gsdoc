@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STScript" up="StepTalk">
+  <head>
+    <title>STScript class documentation</title>
+    <author name="Stefan Urbanek">
+      <email address="stefanurbanek@yahoo.fr">
+        stefanurbanek@yahoo.fr
+      </email>
+    </author>
+    <copy>2002 Stefan Urbanek</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the STScript class
+      </heading>
+      <class name="STScript" super="NSObject">
+        <declared>StepTalk/STScript.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <ivariable type="NSString*" name="language" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSString*" name="source" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <method type="id" factory="yes">
+          <sel>scriptWithSource:</sel>
+          <arg type="NSString*">aString</arg>
+          <sel>language:</sel>
+          <arg type="NSString*">lang</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>initWithSource:</sel>
+          <arg type="NSString*">aString</arg>
+          <sel>language:</sel>
+          <arg type="NSString*">lang</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>language</sel>
+          <desc>
+            Returns language of the script.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setLanguage:</sel>
+          <arg type="NSString*">name</arg>
+          <desc>
+            Set language of the script.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setSource:</sel>
+          <arg type="NSString*">aString</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>source</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </class>
+    </chapter>
+  </body>
+</gsdoc>

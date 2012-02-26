@@ -1,0 +1,12 @@
+/** Standard.stenv 
+ *  Standard cripting description 
+ */
+
+{
+    Name = "Standard";
+    Modules = (ObjectiveC);
+    Use = ( "SymbolicSelectors", 
+            "Foundation", 
+            "StepTalk"
+          );
+}

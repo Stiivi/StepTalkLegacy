@@ -1,0 +1,45 @@
+/** Foundation.stenv 
+ */
+
+{
+    Name = "Foundation";
+    Modules = (Foundation);
+    
+    Use = ("Foundation-operators");
+
+    DefaultRestriction = AllowAll;
+    
+    Classes = 
+    {
+        NSObject = {
+            Super = nil;
+        };
+        
+        "NSObject class" = {
+            Super = nil;
+        };
+
+        NSString = 
+        {
+            Super = "NSObject";
+        };
+        
+        NSArray = 
+        {
+            Super = "NSObject";
+        };
+        NSDate =
+        {   Super = "NSObject";
+        };
+
+        NSValue = 
+        {
+            Super = "NSObject";
+        };
+        
+        NSNumber = 
+        {
+            Super = "NSValue";
+        };
+    }; /* Classes */
+}

@@ -1,0 +1,22 @@
+{
+    ApplicationName = "Script Papers";
+    ApplicationDescription = "Application for writing script papers.";
+    ApplicationRelease = "0.1.0";
+    Authors = ("Stefan Urbanek <urbanek@host.sk>");
+    Copyright = "Copyright (c) 2003 Stefan Urbanek <urbanek@host.sk>";
+    CopyrightDescription = "This program is released under the GNU General Public License"; 
+
+    NSIcon = ScriptPapers;
+
+    NSTypes = (
+        {
+             NSUnixExtensions = ("spaper");
+             NSName = "spaper";
+             NSHumanReadableName = "Script Paper";
+             NSMIMETypes = ("application/spaper");
+             NSIcon = ScriptPaperFile;
+             NSRole = Editor;
+             NSDocumentClass = ScriptPaper;
+        }
+    );
+}

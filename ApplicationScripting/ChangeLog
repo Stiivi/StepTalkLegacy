@@ -1,0 +1,78 @@
+2003 May 2  Stefan Urbanek <urbanek@host.sk>
+
+    * Added 'Objects' searching in application.
+    * Added ScriptingInfo.plist template
+    * GNUmakefile: removed inclusion of source-distribution.make
+    
+2003 May 1  Stefan Urbanek <urbanek@host.sk>
+
+    * Support: updated files to use #include instead of #import
+
+2003 Apr 04  David Ayers  <d.ayers@inode.at>
+
+    * GNUmakefile: Added flags to be able to compile from the building
+    directories and show all warnings except for import.
+    * NSApplication+additions.h: Added missing declaration.
+    * NSApplication+additions.m: Added import of needed headers.  Removed
+    and commented unused variables to supress compiler warnings.
+    Corrected variable types and added necessary casts.
+    * NSObject+NibLoading.m: Added missing import.
+    * NSTextView+ScriptExecution.m: Removed unused variables.
+    * STAppScriptingSupport.m: Added missing import.
+    * STApplicationScriptingController.m: Ditto.
+    * STEnvironment+additions.m: Ditto.
+    * STScriptsPanel.h: Added missing declarations.
+    * STScriptsPanel.m: Added missing imports.  Removed unused variables.
+    * STScriptingSupport.m: Added interface declaraions to supress
+    compiler warnings.
+    * STTranscript.h: Added missing declarations.
+    * STTranscript.m:  Added missing imports.
+
+	
+2003 Mar 27  Stefan Urbanek <urbanek@host.sk>
+
+    * ScriptsPanel.gorm: disallow multiple selection in scripts list. It was
+    not possible to get index of selected cell, because of -gui b0rk.
+
+2003 Mar 24  Stefan Urbanek <urbanek@host.sk>
+
+    * GNUmakefile*: Removed unnecessary stuff
+    * Documentation: Moved relevant docs into StepTalk documentation. Removed
+    the directory.
+
+2003 Mar 23  Stefan Urbanek <urbanek@host.sk>
+
+    * Added ScriptingMenu.gorm
+    * NSApplication: new methods: scriptingMenu and setScriptingMenu:
+    * Added 'Do selection' and 'Do and show selection' methods for NSTextView
+
+2003 Mar 23  Stefan Urbanek <urbanek@host.sk>
+
+    * Rewritten and changed from library to bundle.
+
+2002 Jun 18  Stefan Urbanek <urbanek@host.sk>
+
+    * STScriptsManager: removed methods that are implemented in StepTalk
+    * STScript: moved to StepTalk
+    
+2002 May 24  Stefan Urbanek <urbanek@host.sk>
+
+    * STScriptsManager: reflex renamed method in StepTalk
+    
+2002 Apr 13  Stefan Urbanek <urbanek@host.sk>
+
+    * Created ScriptingSupport bundle
+    * Created Support/ScriptingSupport.m for loading application scripting 
+    support
+    * Updated Ink.app example to use loading of scripting support
+        
+2002 Apr 12  Stefan Urbanek <urbanek@host.sk>
+
+    * STScriptsManager: Look for scripts also in all loaded bundles
+    * NSApplication+additions: Update scripting information from all bundles.
+    Read scripting info when new bundle is loaded.
+
+2002 Apr 12  Stefan Urbanek <urbanek@host.sk>
+
+    * ChangeLog started
+    

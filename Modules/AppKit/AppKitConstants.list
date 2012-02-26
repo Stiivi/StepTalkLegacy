@@ -1,0 +1,460 @@
+# AppKit Constants
+#
+
+# id NSApp
+
+id NSModalPanelRunLoopMode
+id NSEventTrackingRunLoopMode
+
+id NSFontAttributeName
+id NSParagraphStyleAttributeName
+id NSForegroundColorAttributeName
+id NSUnderlineStyleAttributeName
+id NSSuperscriptAttributeName
+id NSBackgroundColorAttributeName
+id NSAttachmentAttributeName
+id NSLigatureAttributeName
+id NSBaselineOffsetAttributeName
+id NSKernAttributeName
+id NSLinkAttributeName
+
+id NSDataLinkFileNameExtension
+
+id NSAFMAscender
+id NSAFMCapHeight
+id NSAFMCharacterSet
+id NSAFMDescender
+id NSAFMEncodingScheme
+id NSAFMFamilyName
+id NSAFMFontName
+id NSAFMFormatVersion
+id NSAFMFullName
+id NSAFMItalicAngle
+id NSAFMMappingScheme
+id NSAFMNotice
+id NSAFMUnderlinePosition
+id NSAFMUnderlineThickness
+id NSAFMVersion
+id NSAFMWeight
+id NSAFMXHeight
+
+id NSCalibratedWhiteColorSpace 
+id NSCalibratedBlackColorSpace 
+id NSCalibratedRGBColorSpace
+id NSDeviceWhiteColorSpace
+id NSDeviceBlackColorSpace
+id NSDeviceRGBColorSpace
+id NSDeviceCMYKColorSpace
+id NSNamedColorSpace
+id NSCustomColorSpace
+
+int NSDefaultDepth
+int NSTwoBitGrayDepth
+int NSEightBitGrayDepth
+int NSEightBitRGBDepth
+int NSTwelveBitRGBDepth
+int GSSixteenBitRGBDepth
+int NSTwentyFourBitRGBDepth
+
+float NSBlack
+float NSDarkGray
+float NSWhite
+float NSLightGray
+float NSGray
+
+id NSDeviceResolution
+id NSDeviceColorSpaceName
+id NSDeviceBitsPerSample
+id NSDeviceIsScreen
+id NSDeviceIsPrinter
+id NSDeviceSize
+id NSInterfaceStyleDefault
+
+id NSColorPboardType
+id NSFileContentsPboardType
+id NSFilenamesPboardType
+id NSFontPboardType
+id NSRulerPboardType
+id NSPostScriptPboardType
+id NSTabularTextPboardType
+id NSRTFPboardType
+id NSRTFDPboardType
+id NSTIFFPboardType
+id NSDataLinkPboardType
+id NSGeneralPboardType
+id NSDragPboard
+id NSFindPboard
+id NSFontPboard
+id NSGeneralPboard
+id NSRulerPboard
+
+id NSPrintAllPages
+id NSPrintBottomMargin
+id NSPrintCopies
+id NSPrintFaxCoverSheetName
+id NSPrintFaxHighResolution
+id NSPrintFaxModem
+id NSPrintFaxReceiverNames
+id NSPrintFaxReceiverNumbers
+id NSPrintFaxReturnReceipt
+id NSPrintFaxSendTime
+id NSPrintFaxTrimPageEnds
+id NSPrintFaxUseCoverSheet
+id NSPrintFirstPage
+id NSPrintHorizontalPagination
+id NSPrintHorizontallyCentered
+id NSPrintJobDisposition
+id NSPrintJobFeatures
+id NSPrintLastPage
+id NSPrintLeftMargin
+id NSPrintManualFeed
+id NSPrintOrientation
+id NSPrintPagesPerSheet
+id NSPrintPaperFeed
+id NSPrintPaperName
+id NSPrintPaperSize
+id NSPrintPrinter
+id NSPrintReversePageOrder
+id NSPrintRightMargin
+id NSPrintSavePath
+id NSPrintScalingFactor
+id NSPrintTopMargin
+id NSPrintVerticalPagination
+id NSPrintVerticallyCentered
+id NSPrintCancelJob
+id NSPrintFaxJob
+id NSPrintPreviewJob
+id NSPrintSaveJob
+id NSPrintSpoolJob
+id NSOldSelectedCharacterRange
+
+# FIXME:
+
+# NSSize NSIconSize
+# NSSize NSTokenSize
+
+id NSPlainFileType
+id NSDirectoryFileType
+id NSApplicationFileType
+id NSFilesystemFileType
+id NSShellCommandFileType
+id NSWorkspaceCompressOperation
+id NSWorkspaceCopyOperation
+id NSWorkspaceDecompressOperation
+id NSWorkspaceDecryptOperation
+id NSWorkspaceDestroyOperation
+id NSWorkspaceDuplicateOperation
+id NSWorkspaceEncryptOperation
+id NSWorkspaceLinkOperation
+id NSWorkspaceMoveOperation
+id NSWorkspaceRecycleOperation
+
+int NSRunStoppedResponse
+int NSRunAbortedResponse
+int NSRunContinuesResponse
+
+int GSNoUnderlineStyle
+int NSSingleUnderlineStyle
+
+int NSButtLineCapStyle
+int NSRoundLineCapStyle
+int NSSquareLineCapStyle
+
+int NSMiterLineJoinStyle
+int NSRoundLineJoinStyle
+int NSBevelLineJoinStyle
+
+int NSNonZeroWindingRule
+int NSEvenOddWindingRule
+int NSMoveToBezierPathElement
+int NSLineToBezierPathElement
+int NSCurveToBezierPathElement
+int NSClosePathBezierPathElement
+
+int NSNoTitle
+int NSAboveTop
+int NSAtTop
+int NSBelowTop
+int NSAboveBottom
+int NSAtBottom
+int NSBelowBottom
+
+int NSTIFFCompressionNone
+int NSTIFFCompressionCCITTFAX3
+int NSTIFFCompressionCCITTFAX4
+int NSTIFFCompressionLZW
+int NSTIFFCompressionJPEG
+int NSTIFFCompressionNEXT
+int NSTIFFCompressionPackBits
+int NSTIFFCompressionOldJPEG
+
+int NSTIFFFileType
+int NSBMPFileType
+int NSGIFFileType
+int NSJPEGFileType
+int NSPNGFileType
+
+int NSMomentaryPushButton
+int NSPushOnPushOffButton
+int NSToggleButton
+int NSSwitchButton
+int NSRadioButton
+int NSMomentaryChangeButton
+int NSOnOffButton
+int NSMomentaryLight
+
+int NSRoundedBezelStyle
+int NSRegularSquareBezelStyle
+int NSThickSquareBezelStyle
+int NSThickerSquareBezelStyle
+int NSNeXTBezelStyle
+int NSPushButtonBezelStyle
+int NSSmallIconButtonBezelStyle
+int NSMediumIconButtonBezelStyle
+int NSLargeIconButtonBezelStyle
+
+int NSGradientNone
+int NSGradientConcaveWeak
+int NSGradientConcaveStrong
+int NSGradientConvexWeak
+int NSGradientConvexStrong
+
+# int NSLeftAlignedParagraph
+# int NSRightAlignedParagraph
+# int NSCenterAlignedParagraph
+# int NSJustificationAlignedParagraph
+# int NSFirstIndentParagraph
+# int NSIndentParagraph
+# int NSAddTabParagraph
+# int NSRemoveTabParagraph
+# int NSLeftMarginParagraph
+# int NSRightMarginParagraph
+
+# int NSTextBlockSize
+
+int NSNullCellType
+int NSTextCellType
+int NSImageCellType
+
+int NSAnyType
+int NSIntType
+int NSPositiveIntType
+int NSFloatType
+int NSPositiveFloatType
+int NSDateType
+int NSDoubleType
+int NSPositiveDoubleType
+
+int NSNoImage
+int NSImageOnly
+int NSImageLeft
+int NSImageRight
+int NSImageBelow
+int NSImageAbove
+int NSImageOverlaps
+
+int NSCellDisabled
+int NSCellState
+int NSPushInCell
+int NSCellEditable
+int NSChangeGrayCell
+int NSCellHighlighted
+int NSCellLightsByContents
+int NSCellLightsByGray
+int NSChangeBackgroundCell
+int NSCellLightsByBackground
+int NSCellIsBordered
+int NSCellHasOverlappingImage
+int NSCellHasImageHorizontal
+int NSCellHasImageOnLeftOrBottom
+int NSCellChangesContents
+int NSCellIsInsetButton
+int NSCellAllowsMixedState
+
+int NSNoCellMask
+int NSContentsCellMask
+int NSPushInCellMask
+int NSChangeGrayCellMask
+int NSChangeBackgroundCellMask
+int NSOffState
+int NSOnState
+int NSMixedState
+
+int NSDefaultControlTint
+int NSClearControlTint
+
+int NSGrayModeColorPanel
+int NSRGBModeColorPanel
+int NSCMYKModeColorPanel
+int NSHSBModeColorPanel
+int NSCustomPaletteModeColorPanel
+int NSColorListModeColorPanel
+int NSWheelModeColorPanel
+
+int NSColorPanelGrayModeMask
+int NSColorPanelRGBModeMask
+int NSColorPanelCMYKModeMask
+int NSColorPanelHSBModeMask
+int NSColorPanelCustomPaletteModeMask
+int NSColorPanelColorListModeMask
+int NSColorPanelWheelModeMask
+int NSColorPanelAllModesMask
+
+# GSCursorTypes
+int GSArrowCursor
+int GSIBeamCursor
+
+# NSDataLinkDisposition
+int NSLinkInDestination
+int NSLinkInSource
+int NSLinkBroken 
+
+# NSDataLinkUpdateMode
+int NSUpdateContinuously
+int NSUpdateWhenSourceSaved
+int NSUpdateManually
+int NSUpdateNever
+
+int NSChangeDone
+int NSChangeUndone
+int NSChangeCleared
+
+int NSSaveOperation
+int NSSaveAsOperation
+int NSSaveToOperation
+
+int NSDragOperationNone
+int NSDragOperationCopy
+int NSDragOperationLink
+int NSDragOperationGeneric
+int NSDragOperationPrivate
+int NSDragOperationAll
+
+# GSFileWrapperType
+
+# int GSFileWrapperDirectoryType
+# int GSFileWrapperRegularFileType
+# int GSFileWrapperSymbolicLinkType
+
+int NSControlGlyph
+int NSNullGlyph
+
+# NSGlyphRelation
+
+int NSGlyphBelow
+int NSGlyphAbove
+
+# NSMultibyteGlyphPacking
+int NSOneByteGlyphPacking
+int NSJapaneseEUCGlyphPacking
+int NSAsciiWithDoubleByteEUCGlyphPacking
+int NSTwoByteGlyphPacking
+int NSFourByteGlyphPacking
+
+int NSItalicFontMask
+int NSUnitalicFontMask
+int NSBoldFontMask
+int NSUnboldFontMask
+int NSNarrowFontMask
+int NSExpandedFontMask
+int NSCondensedFontMask
+int NSSmallCapsFontMask
+int NSPosterFontMask
+int NSCompressedFontMask
+int NSNonStandardCharacterSetFontMask
+int NSFixedPitchFontMask
+
+# NSFontTag
+
+int NSNoFontChangeAction
+int NSViaPanelFontAction
+int NSAddTraitFontAction
+int NSRemoveTraitFontAction
+int NSSizeUpFontAction
+int NSSizeDownFontAction
+int NSHeavierFontAction
+int NSLighterFontAction
+
+int NSFPPreviewButton
+int NSFPRevertButton
+int NSFPSetButton
+int NSFPPreviewField
+int NSFPSizeField
+int NSFPSizeTitle
+int NSFPCurrentField
+
+int NSFPFamilyBrowser
+int NSFPFaceBrowser
+int NSFPSizeBrowser
+
+# NSBackingStoreType
+
+int NSBackingStoreRetained
+int NSBackingStoreNonretained
+int NSBackingStoreBuffered
+
+
+# NSCompositingOperation
+
+int NSCompositeClear
+int NSCompositeCopy
+int NSCompositeSourceOver
+int NSCompositeSourceIn
+int NSCompositeSourceOut
+int NSCompositeSourceAtop
+int NSCompositeDestinationOver
+int NSCompositeDestinationIn
+int NSCompositeDestinationOut
+int NSCompositeDestinationAtop
+int NSCompositeXOR
+int NSCompositePlusDarker
+int NSCompositeHighlight
+int NSCompositePlusLighter
+
+# NSWindowOrderingMode
+
+int NSWindowAbove
+int NSWindowBelow
+int NSWindowOut
+
+# GSWindowInputState
+int GSTitleBarKey
+int GSTitleBarNormal
+int GSTitleBarMain
+
+# NSImageScaling
+int NSScaleProportionally
+int NSScaleToFit
+int NSScaleNone
+
+# NSImageAlignment
+int NSImageAlignCenter
+int NSImageAlignTop
+int NSImageAlignTopLeft
+int NSImageAlignTopRight
+int NSImageAlignLeft
+int NSImageAlignBottom
+int NSImageAlignBottomLeft
+int NSImageAlignBottomRight
+int NSImageAlignRight
+
+# NSImageFrameStyle
+
+int NSImageFrameNone
+int NSImageFramePhoto
+int NSImageFrameGrayBezel
+int NSImageFrameGroove
+int NSImageFrameButton
+
+# NSPanel
+
+int NSUtilityWindowMask
+int NSDocModalWindowMask
+int NSOKButton
+int NSCancelButton
+
+int NSAlertDefaultReturn
+int NSAlertAlternateReturn
+int NSAlertOtherReturn
+int NSAlertErrorReturn
+

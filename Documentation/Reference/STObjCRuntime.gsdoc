@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STObjCRuntime" up="StepTalk">
+  <head>
+    <title>STObjCRuntime documentation</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2002 Free Software Foundation</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>STObjCRuntime functions</heading>
+      <p></p>
+      <function type="NSMutableDictionary*" name="STAllObjectiveCClasses">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </function>
+      <function type="NSArray*" name="STAllObjectiveCSelectors">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </function>
+      <function type="NSDictionary*" name="STClassDictionaryWithNames">
+        <arg type="NSArray*">classNames</arg>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </function>
+      <function type="NSMethodSignature*" name="STConstructMethodSignatureForSelector">
+        <arg type="SEL">sel</arg>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </function>
+      <function type="NSMutableDictionary*" name="STGetFoundationConstants">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </function>
+      <function type="NSMethodSignature*" name="STMethodSignatureForSelector">
+        <arg type="SEL">sel</arg>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </function>
+      <function type="SEL" name="STSelectorFromString">
+        <arg type="NSString*">aString</arg>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </function>
+      <function type="SEL" name="STSelectorFromValue">
+        <arg type="NSValue*">val</arg>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </function>
+      <function type="NSValue*" name="STValueFromSelector">
+        <arg type="SEL">sel</arg>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </function>
+    </chapter>
+  </body>
+</gsdoc>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STUndefinedObject" up="StepTalk">
+  <head>
+    <title>STUndefinedObject class documentation</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2002 Free Software Foundation</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the STUndefinedObject class
+      </heading>
+      <class name="STUndefinedObject" super="NSObject">
+        <declared>StepTalk/STUndefinedObject.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </class>
+    </chapter>
+  </body>
+</gsdoc>

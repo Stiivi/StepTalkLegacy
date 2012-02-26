@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STObjectReference" up="StepTalk">
+  <head>
+    <title>STObjectReference class documentation</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2002 Free Software Foundation</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the STObjectReference class
+      </heading>
+      <class name="STObjectReference" super="NSObject">
+        <declared>StepTalk/STObjectReference.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <ivariable type="NSString*" name="identifier" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="id" name="target" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <method type="NSString*">
+          <sel>identifier</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>initWithIdentifier:</sel>
+          <arg type="NSString*">ident</arg>
+          <sel>target:</sel>
+          <arg type="id">anObject</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>object</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setObject:</sel>
+          <arg type="id">anObject</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>target</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </class>
+    </chapter>
+  </body>
+</gsdoc>

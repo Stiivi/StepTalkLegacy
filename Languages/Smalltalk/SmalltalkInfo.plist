@@ -1,0 +1,11 @@
+{
+    STFileTypes = ( "st", "stalk" );
+
+    StepTalkLanguages = {
+        Smalltalk = {
+                FileTypes = ("st");
+                EngineClass = "SmalltalkEngine";
+            }
+    }
+
+}

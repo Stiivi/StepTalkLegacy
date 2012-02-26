@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STContext" up="StepTalk">
+  <head>
+    <title>STEnvironment class reference</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2002 Free Software Foundation</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the STContext class
+      </heading>
+      <class name="STContext" super="NSObject">
+        <declared>StepTalk/STContext.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <ivariable type="BOOL" name="createsUnknownObjects" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="BOOL" name="fullScripting" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSMutableDictionary*" name="objectDictionary" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="STContext*" name="parentContext" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <method type="void">
+          <sel>addNamedObjectsFromDictionary:</sel>
+          <arg type="NSDictionary*">dict</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>createsUnknownObjects</sel>
+          <desc>
+            Returns <code>YES</code> if unknown objects are
+            being created.
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>fullScriptingEnabled</sel>
+          <desc>
+            Returns <code>YES</code> if full scripting is
+            enabled.
+          </desc>
+        </method>
+        <method type="NSArray*">
+          <sel>knownObjectNames</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSMutableDictionary*">
+          <sel>objectDictionary</sel>
+          <desc>
+            Returns a dictionary of all named objects in the
+            environment.
+          </desc>
+        </method>
+        <method type="STObjectReference*">
+          <sel>objectReferenceForObjectWithName:</sel>
+          <arg type="NSString*">name</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>objectWithName:</sel>
+          <arg type="NSString*">objName</arg>
+          <desc>
+            Return object with name <var>objName</var>. If
+            object is not found int the object dictionary, then
+            object finders are used to try to find the object.
+            If object is found by an object finder, then it is put
+            into the object dicitonary. If there is no object with
+            given name, <var><code>nil</code></var> is returned.
+          </desc>
+        </method>
+        <method type="STContext*">
+          <sel>parentContext</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>removeObjectWithName:</sel>
+          <arg type="NSString*">objName</arg>
+          <desc>
+            Remove object named <var>objName</var>.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setCreatesUnknownObjects:</sel>
+          <arg type="BOOL">flag</arg>
+          <desc>
+            <p>
+              Enable or disable creation of unknown objects.
+              Normally you get <code>nil</code> if you request
+              for non-existant object. If <var>flag</var> is
+              <code>YES</code> then by requesting non-existant
+              object, name for that object is created and it is
+              set no STNil.
+            </p>
+            <p>
+              Note: This method will be probably removed (moved
+              to Smalltalk language bundle).
+            </p>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setFullScriptingEnabled:</sel>
+          <arg type="BOOL">flag</arg>
+          <desc>
+            Full scripting <br /> Enable or disable full
+            scripting. When full scripting is enabled, you
+            may send any message to any object.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setObject:</sel>
+          <arg type="id">anObject</arg>
+          <sel>forName:</sel>
+          <arg type="NSString*">objName</arg>
+          <desc>
+            Register object <var>anObject</var> with name
+            <var>objName</var>.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setParentContext:</sel>
+          <arg type="STContext*">context</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </class>
+    </chapter>
+  </body>
+</gsdoc>

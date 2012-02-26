@@ -1,0 +1,17 @@
+{
+    ScriptingInfoClass = StepTalkScriptingInfo;
+    
+    Classes = (
+        STActor,
+        STEnvironment,
+        STLanguageManager,
+        STScript,
+        STScriptsManager,
+        STBundleInfo,
+        STEngine,
+        STScriptObject,
+        STConversation,
+        STRemoteConversation,
+        STContext
+    );
+}

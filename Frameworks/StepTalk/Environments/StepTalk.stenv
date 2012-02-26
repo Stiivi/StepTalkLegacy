@@ -1,0 +1,45 @@
+/** StepTalk.stenv 
+ *  StepTalk scripting description 
+ * 
+ *  Copyright (c) 2000 Stefan Urbanek
+ * 
+ *  This file is part of the StepTalk project.
+ *
+ *
+ */
+
+{
+    Name = "StepTalk";
+    
+    Frameworks = (StepTalk);
+    
+    Classes = 
+    {
+        STBlock = 
+        {
+            Super = NSObject;
+            AllowMethods =
+            (
+                "value",
+                "valueWith:",
+                "valueWith:with:",
+                "valueWith:with:with:",
+                "valueWith:with:with:with:",
+                "argumentCount",
+                "handler:",
+                "whileTrue:",
+                "whileFalse:"
+            );
+        };
+        STScriptObject =
+        {
+            Super = NSObject;
+            Restriction = AllowAll;
+        };
+        STUndefinedObject =
+        {
+            Super = nil;
+            Restriction = AllowAll;
+        };
+    }
+}

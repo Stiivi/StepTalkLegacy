@@ -1,0 +1,634 @@
+2005 Sep 5 Stefan Urbanek
+
+    * Version 0.10.0
+
+2005 Sep 5 Stefan Urbanek
+
+    * Frameworks/StepTalk: compiler warnings removed
+
+2005 Aug 30 Stefan Urbanek
+
+    * STLanguageManager: new class
+    * STLanguage: removed
+    * STEngine: engineForLanguageWithName: and engineForFileType: removed, use 
+    STLanguageManager instead, added engineForLanguage:
+    * Tools/stexec - updated to use STLanguageManager
+    * Tools/stupdate_languages - removed as it was replaced by STLanguageManager
+    * Examples/Server - removed as it was replaced by stenvironment and distant
+    scripting
+    
+    Notes:
+    - you can delete */Library/StepTalk/Configuration directories
+    
+2005 Aug 17 Stefan Urbanek
+
+    * STConversation: renamed run* method to interpret*, interpretScript: does
+    not return value anymore (because of distant conversations), new methods
+    result and resultByCopy were added
+    * STEnvironment: removed depreciated methods
+    * STDistantConversation: new class for conversations with distant objects
+    * Tools/stenvironment: new tool for semi-persistent scripting environments
+    * Tools/stexec: added reading from stdin; reflect library changes
+    * Tools/stalk: removed
+    * STEngine: renamed methods (see STEngine.h for more information)
+    
+2005 June 30
+
+    Version 0.9.1
+
+2005 June 30
+
+    * STActor: new class
+    * Examples/Smalltalk/actor - new actor example
+
+2005 June 19
+
+    Version 0.9.0
+    
+2005 June 19 Stefan Urbanek
+    
+    * STEnvironment: search class name namespace when no object is found for
+    given name and full scripting is enabled.
+    
+2005 Jan 4  Stefan Urbanek
+
+    * First step of introducing contexts
+    
+    NOTE: This version is unstable.
+
+2004 Nov 9 Stefan Urbanek
+
+    * Remove STMethodSignatureForSelector as it was deprecated because of
+    inportability to OSX.
+    
+2004 Sep 23 Stefan Urbanek
+
+    * STContext: new class
+    * STEnvironment: make it subclass of STContext, move several methods
+
+2004 Sep 6  Stefan Urbanek
+
+    * stshell: fix for compiler
+    * added missing STEnvironmentDescription installation
+    
+2004 Aug 2  Stefan Urbanek
+
+    * Search for scripts in */Library/Scripts/*
+    * stexec: use scripts manager to look for scripts in default locations. For
+    this tool it is .../Library/Scripts/Shell or .../Library/StepTalk/Scripts/Shell
+
+2004 Jul 26 Stefan Urbanek
+
+    * Added NSString containsString: to Foundation module.
+    
+2004 Jun 27 Stefan Urbanek
+
+    * Added examples:
+        - Developer/StepUnit.st from Mateu Batle
+        - awlaunch.sh from Frederico Munoz
+    * Version 0.8.1
+
+2004 Apr 25 Stefan Urbanek
+
+    * Changed license to LGPL
+
+2004 Apr 19 Stefan Urbanek
+
+    * applied patch from Mateu Batle to replace nil valuse with STNil on 
+    message sending
+    * fixed STConversation issue
+    
+2004 Mar 28 Stefan Urbanek
+
+    Changes according to the Helge Hess:
+    * STBundleInfo: fix to use string instead of constant (OSX compatibility)
+    * STFileScript, STLanguage, STScript: added missing #imports
+
+
+2003 Nov 24 Stefan Urbanek <stefanu@altair.dcs.elf.stuba.sk>
+
+    * Version 0.8.1
+
+2003 Nov 24 Stefan Urbanek <stefanu@altair.dcs.elf.stuba.sk>
+
+    * Few fixes, removed some compiler warnings. Fixed Shell to use
+    proper environment.
+
+2003 Nov 8 Stefan Urbanek <stefanu@altair.dcs.elf.stuba.sk>
+
+    * Updated tools to use STConversation object.
+
+2003 Oct 23 Stefan Urbanek <stefanu@altair.dcs.elf.stuba.sk>
+
+    * Added STEnvironment +sharedEnvironment, +defaultScriptingEnvironment and
+    initWithDefaultDescription. Deprecated initDefault, 
+    environmentWithDescriptionName, environmentWithDescriptionName
+    * Added STConversation class
+    
+2003 Oct 6 Stefan Urbanek <urbanek@host.sk>
+
+    * Added STFileScript - moved all unnecessary stuff from STScript there.
+    * Fixed STScriptsManager to use STFileScript
+
+2003 Oct 3   Stefan Urbanek <urbanek@host.sk>
+
+    * Added ReadlineTranscript module (Idea by Alexander Diemand + patch from 
+    David Ayers)
+    * Added shell.st example.
+
+2003 Sep 24  Stefan Urbanek <urbanek@host.sk>
+    
+    * STEnvironmentDescription: guard initialisation in Autorelease pool
+
+2003 Sep 23  Stefan Urbanek <urbanek@host.sk>
+
+    * STEngine: setValueForOption: added
+
+2003 Aug 13  Stefan Urbanek <urbanek@host.sk>
+
+    * Version 0.8.0
+
+2003 Aug 9  Stefan Urbanek <urbanek@host.sk>
+
+    * Removed compiler warnings in StepTalk.framework, Smalltalk and Tools
+
+2003 Aug 6  Stefan Urbanek <urbanek@host.sk>
+
+    * Frameworks: new directory
+    * Changed StepTalk from library to framework
+    * Modules: Removed StepTalk module as it is no more needed, because
+    we have framework and it can provide scripting capabilities by it self
+    * All GNUMakefiles modified to reflect change to Framework
+    * Added Framework loading in .stenv description files. 
+    Use: Frameworks = (name1, name2);
+    
+    NOTE: You HAVE to remove your previous installation of StepTalk to be
+    able to install new one. (especially Local/Library/Headers/StepTalk).
+    
+2003 Aug 5  Stefan Urbanek <urbanek@host.sk>
+    
+    * Added STScriptObject and STMethod.
+
+2003 Jun 15
+
+    * NSInvocation+additions: added unknown selector creation; created a
+    workaround for gnustep DO bug
+    * STObjCRuntime: Fixed creation of signature.
+
+2003 May 11 Stefan Urbanek <urbanek@host.sk>
+
+    * Fixed linking of some bundles
+
+2003 May 10 Stefan Urbanek <urbanek@host.sk>
+
+    * Fixed linking under mingw32
+    * STBundleInfo: implemented framework searching
+    * STEnvironment: includeFramework: new method.
+
+2003 May 2   Stefan Urbanek <urbanek@host.sk>
+
+    * STBundleInfo: added objectReferenceDictionary; removed unnecessary ST 
+      prefix from ScriptingInfo.plist keys and added warnings for the change.;
+      check for existence of ScriptingInfo.plist before using it
+    * Modules: reflect changes to STBundleInfo
+    * Updated all GNUmakefiles to use new path
+    * STEnvironment: added initDefault - this will replace confusing 
+      defaultScriptingEnvironment.
+    * Added Applications
+    * Added ScriptPapers application
+
+2003 Apr 22  Stefan Urbanek <urbanek@host.sk>
+
+    * Added library reference documentation generated by autogsdoc.
+    * Added TroubleShooting.txt document
+    
+2003 Apr 21  Stefan Urbanek <urbanek@host.sk>
+
+    * Version 0.7.1
+
+2003 Apr 04  David Ayers  <d.ayers@inode.at>
+
+    * STEngine.h: Fixed declaration to match implementation to avoid
+    compiler warnings.
+    * STEnvironment.h: Ditto.
+    * STScriptsManager.h: Ditto.
+    * STLanguage.h: Corrected declaration.
+    * STScriptsManager.m: Added needed interface declaration.
+    * GNUmakefile:  Added flags to show all warnings except for import.
+    * Module/ObjectiveC/GNUmakefile:  Added flags to show all warnings
+    except for import.
+    * Module/Foundation/GNUmakefile:  Added flags to show all warnings
+    except for import.
+    * Module/AppKit/AppKitExceptions.m: Used variable to supress compiler
+    warnings.
+    * Module/AppKit/AppKitNotifications.m: Ditto.
+    * Module/AppKit/GNUmakefile:  Added flags to show all warnings except
+    for import.
+    * Module/GDL2/GDL2Constants.m: Used variable to supress compiler
+    warnings.
+    * Module/GDL2/GNUmakefile: Added flags to show all warnings except
+    for import.
+    * Module/SimpleTranscripts/GNUmakefile: Added flags to show all warnings
+    except for import.
+    * Module/StepTalk/GNUmakefile: Added flags to show all warnings
+    except for import.
+    * Tools/stalk.m: Added needed interface declaration.
+    * Tools/stupdate_languages.m: Corrected variable declaration and added
+    cast.
+
+2003 Apr 3   Stefan Urbanek <urbanek@host.sk>
+
+    * STScript: added compareByLocalizedName:
+
+2003 Mar 30  Stefan Urbanek <urbanek@host.sk>
+
+    * WISH: new file
+
+2003 Mar 25  Stefan Urbanek <urbanek@host.sk>
+
+    * STScriptsManager: new method setScriptSearchPathsToDefaults; new method 
+    setScriptSearchPaths:; added instance variable scriptSearchPaths
+
+2003 Mar 24  Stefan Urbanek <urbanek@host.sk>
+
+    * Documentation: Updated ApplicationScripting.txt
+
+2003 Mar 23  Stefan Urbanek <urbanek@host.sk>
+
+    * Added ApplicationScripting
+    * GNUMakefile: add ApplicationScripting. Can be ignored when appkit=no
+    * Languages/Guile: Fixed steptalk interface changes (patch from Matt Rice 
+    <matt@vespertine.pc.ashlandfiber.net>)
+
+2003 Mar 22  Stefan Urbanek <urbanek@host.sk>
+
+    * STEnvironment: includeBundle returns NO on failure
+    * STScriptsManager: added method allScripts that returns all scripts for 
+    domainand; added private method _scriptsAtPath: 
+    * STScript: do not delete original extension when looking for script info
+    file, so some.st will have some.st.stinfo; renamed localizedScriptName to
+    localizedName
+    * STLanguage: new methods: updateFileTypeDictionary and allKnownFileTypes
+
+2003 Feb 21  Stefan Urbanek <urbanek@host.sk>
+
+    * StepTalk.h: Removed #import of STModule.h as it is no longer there
+
+2003 Feb 11  Stefan Urbanek <urbanek@host.sk>
+
+    * Source/GNUmakefile: fixed installation of documentation
+    
+2003 Feb 4  Stefan Urbanek <urbanek@host.sk>
+
+    * STBundleInfo: warn instead of raise an exception if there is no scripting
+    info class.
+
+2003 Feb 3  Stefan Urbanek <urbanek@host.sk>
+
+    * Version 0.7.0
+
+2003 Jan 30  Stefan Urbanek <urbanek@host.sk>
+
+    * STBundleInfo: Removed compiler warning
+    * Modules/*: Cleanup for compiler warnings   
+
+2003 Jan 29  Stefan Urbanek <urbanek@host.sk>
+
+    * Modules/ObjectiveC: fixed GNUmakefile to include source headers
+    
+2003 Jan 25  Stefan Urbanek <urbanek@host.sk>
+
+    * STBundleInfo: Fixed NSBundle stepTalkBundleNames to use .bundle file
+    extension
+    * Modules/*/GNUmakefile: Removed now unnecesary -lStepTalk, because modules
+    do not have to be linked with StepTalk anymore
+
+2003 Jan 25  Stefan Urbanek <urbanek@host.sk>
+
+    * Version 0.7.0pre1
+
+2003 Jan 24  Stefan Urbanek <urbanek@host.sk>
+
+    * STBundleInfo: Use info from ScriptingInfo.plist instead of bundle's main
+    info dictionary
+    * Modules/*: Create ScriptingInfo.plist
+    * Modules/GNUmakefile: Compile GDL2 module if it is available.
+
+2003 Jan 22  Stefan Urbanek <urbanek@host.sk>
+
+    * STEnvironment: added includeBundle: method
+
+2003 Jan 22  Stefan Urbanek <urbanek@host.sk>
+
+    * STModule: removed
+    * STBundleInfo: added new class STBundleInfo and additional methods to 
+    NSBundle
+    * STEnvironment: reflect change from STModule to NSBundle/STBundleInfo;
+    * Modules/*: reflect change from STModule to NSBundle/STBundleInfo
+
+    IMPORTANT NOTE: You have to rebuild all modules, because the format has
+    changed.
+
+2003 Jan 22  Stefan Urbanek <urbanek@host.sk>
+
+    * NSNumber+additions: Added -modulo: method.
+    * Foundation bundle: added NSFileManager extensions; added missing constants
+    * Documentation/Additions.txt: new file
+   
+2003 Jan 20  Stefan Urbanek <urbanek@host.sk>
+
+    * GNUMakefile: Removed inclusion of source-distribution.make, as it is
+    not needed (suggested by Nicola Pero <nicola@brainstorm.co.uk>)
+    * Examples/Developer: new directory containing developer examples
+    
+2003 Jan 15  Stefan Urbanek <urbanek@host.sk>
+
+    * GDL2: added installation of GDL2.stenv
+    * Documentation/Tools.txt: new file documenting steptalk tools
+
+2002 Dec 25  Stefan Urbanek <urbanek@host.sk>
+    
+    * Version 0.6.2
+
+2002 Dec 21  Stefan Urbanek <urbanek@host.sk>
+
+    * Languages/GNUmakefile, Modules/GNUmakefile, Finders/GNUmakefile: removed
+    forced installation to the GNUSTEP_USER_ROOT. ~/Library/StepTalk/* should
+    be deleted.
+    * Documentation/Modules.txt: added
+
+2002 Nov 29  Stefan Urbanek <urbanek@host.sk>
+
+    * Added GDL2 module
+    * STModule: more details on module loading fault
+
+2002 Nov 11  Stefan Urbanek <urbanek@host.sk>
+    
+    * ObjectiveC module: added selectorsContainingString: and
+    implementorsOfSelector:
+
+2002 Nov 5  Stefan Urbanek <urbanek@host.sk>
+
+    * Added MyLanguage as empty example language bundle
+
+2002 Sep 17  Stefan Urbanek <urbanek@host.sk>
+    
+    * Patch from Jeff Teunissen <deek@d2dc.net> with various bug-fixes
+    * Added .cvsignore files
+    
+2002 Sep 15  Stefan Urbanek <urbanek@host.sk>
+
+    * Version 0.6.1
+
+2002 Sep 15  Stefan Urbanek <urbanek@host.sk>
+
+    * Modules/AppKit/AppKitConstants.list: commented out undefined constants
+    
+2002 Sep 7  Stefan Urbanek <urbanek@host.sk>
+
+    * Modules/AppKit/AppKitInfo.plist: added NSSound class
+    
+2002 Aug 27  Stefan Urbanek <urbanek@host.sk>
+
+    * Source/*.m: Cleanup to remove compiler warnings.
+    
+2002 Jun 18  Stefan Urbanek <urbanek@host.sk>
+
+    * STScript: new class (from AppTalk)
+    * STScriptsManager: new class (from AppTalk)
+    * Modules/StepTalk: new module
+
+2002 Jun 14  Stefan Urbanek <urbanek@host.sk>
+
+    * Modules/ObjectiveC: new module
+    
+2002 Jun 10  Stefan Urbanek <urbanek@host.sk>
+
+    * NSObject+additions: removed -className as it was added to the base library
+
+2002 Jun 9  Stefan Urbanek <urbanek@host.sk>
+
+    * Version 0.6.0 released
+
+2002 Jun 8  Stefan Urbanek <urbanek@host.sk>
+
+    * STEnvironmentDescription: added module amd finder list; little code 
+    cleanup; removed descriptionFromFile: and initFromFile: methods
+    * STEnvironment: removed methods
+        environmentWithDescriptionFromFile:
+        environmentWithDescriptionFromDictionary:
+        initWithDescriptionFromFile: 
+        init
+        addAllClasses
+        addObject:withName:
+        allObjectNames
+    new methods:
+        environmentWithDescription:
+        initWithDescription:
+    renamed methods:
+        defaultObjectPool to objectDictionary
+        registerObjectFinderWithName: to registerObjectFinderNamed:
+    load modules and finders from description at initialization;
+    * STExecutor: reflect STEnvironment changes        
+    * stexec: removed loading of the Foundation module as this is handled
+    by the STEnvironment
+    * Environments: new descriptions AppKit.stenv and Distributed.stenv
+    
+2002 Jun 7  Stefan Urbanek <urbanek@host.sk>
+
+    * STEnvironmentDescription: added abstract class 'All' that is root
+    class for all classes
+    * Foundation-operators.stenv: add symbolic selector '->' to all classes
+
+2002 Jun 6  Stefan Urbanek <urbanek@host.sk>
+
+    * Added symbolic selector '->' for valueForKeyPath:
+    * StepTalk.stenv: allow whileTrue: and whileFalse: in STBlock
+    * NSObject+additions: moved from Smalltalk; added -isSame: method
+    * DistributedFinder: prevent NSDictionary log when there is no file for 
+    a requested object; changed NSLogs to NSDebugLLogs with 'STFinder'; do not
+    try to launch nil tool
+    
+2002 Jun 4  Stefan Urbanek <urbanek@host.sk>
+
+    * STEnvironment: new methods -addObjectFinder:name:,
+    -addObjectFinderWithName:, -removeObjectFinderWithName:;
+    new method knownObjectNames;
+    objectReferenceForObjectWithName: changed to use nil reference on
+    known object that cannot be currently found
+    * Finders: new directory containing object finders
+    * STObjCRuntime: include selectors of metaclasses in 
+    STAllObjectiveCSelectors()
+    * Documentation/HowTo.txt: rewritten
+    
+2002 Jun 3  Stefan Urbanek <urbanek@host.sk>
+
+    * STFunctions: renamed "StepTalk/Config" directory to 
+    "StepTalk/Configuration"; fixed bug in STFindAllResources (resourceDir
+    was ignored)
+    * STEnvironment: changed method allObjectsDictionary to allObjectNames
+    
+2002 May 30  Stefan Urbanek <urbanek@host.sk>
+
+    * STEnvironment: removed pools
+    * STObjectReference: removed method initWithObjectName:pool:create:
+    
+2002 May 29  Stefan Urbanek <urbanek@host.sk>
+    
+    * STExecutor: fixed typo
+    * STEnvironment: new method -allObjectsDictionary that returns a NSDictionary
+    with all named objects
+    * STObjCRuntime: new function STAllObjectiveCSelectors
+    
+2002 May 24  Stefan Urbanek <urbanek@host.sk>
+
+    * STEngine: engineForLanguage: renamed to engineForLanguageWithName:.
+    Some method documentation added.
+    * STExecutor: reflect method renaming
+    * STLanguage: read default language name from actual user defaults (not 
+    from the StepTalk domain) and renamed the key to STDefaultLanguageName. 
+    Renamed languageWithBundle: to languageWithPath:. Some method documentation 
+    added.
+    * STEnvironmentDescription: read default description name from actual user 
+    defaults (not from the StepTalk domain)
+    * STEnvironment: Some method documentation added.
+    * StepTalk.gsdoc: new file
+
+2002 May 13  Stefan Urbanek <urbanek@host.sk>
+    
+    * Uploaded to the GNUstep CVS repository by Adam Fedor
+    
+2002 Apr 20  Stefan Urbanek <urbanek@host.sk>
+
+    * COPYING: updated
+    * STExterns: Removed unused exceptions
+    * STStructure: Changed exception to STInternalIncosistencyException
+        
+2002 Apr 13  Stefan Urbanek <urbanek@host.sk>
+
+    * Modules/GNUmakefile: added option that disables making of appkit support
+    Use make appkit=no.
+    * Separated AppTalk
+     
+2002 Mar 17  Stefan Urbanek <urbanek@host.sk>
+
+    * STEngine: removed executeScript: methods and use only executeSource:
+      engine does not make difference between script and statements anymore
+    * Tools: removed --expressions option
+    * Examples: fixed Smalltalk examples to use new grammar
+    * STLanguage: new method languageNameForFileType:
+
+2002 Mar 13  Stefan Urbanek <urbanek@host.sk>
+
+    * AppKit module: removed old AppKit constants and renamed MiddleButton
+    events to OtherButton.
+
+2002 Feb 14  Stefan Urbanek <urbanek@host.sk>
+
+    * added make option 'appkit'. if you set it to 'no' (make appkit=no), 
+    no appkit stuff will be compiled. 
+    
+2002 Feb 5  Stefan Urbanek <urbanek@host.sk>
+
+    * StepTalk 0.5.0 released
+
+2002 Feb 5  Stefan Urbanek <urbanek@host.sk>
+
+    * STSelector: new file
+    * NSInvocation+additions: handle SEL type with STSelector
+    * Examples: added selector.st, notification.st, scope.st and pldes.st
+
+2002 Feb 3  Stefan Urbanek <urbanek@host.sk>
+
+    * Testing: new directory
+    
+2002 Jan 30  Stefan Urbanek <urbanek@host.sk>
+
+    * STEnvironment: Removed unused variables,
+    
+2002 Jan 23  Stefan Urbanek <urbanek@host.sk>
+
+    * NSNumber+additions: moved from Smalltalk, added methods for creation of
+      range, point and size
+
+2002 Jan 21  Stefan Urbanek <urbanek@host.sk>   
+
+    * StepTalk 0.4.1 released
+
+2002 Jan 21  Stefan Urbanek <urbanek@host.sk>  
+    
+    * Removed Foundation constants to separate module
+    * stexec: load Foundation module instead of loading all ObjC classes
+
+2002 Jan 13  Stefan Urbanek <urbanek@host.sk>
+
+    * Guile: new language bundle
+
+2002 Jan 9  Stefan Urbanek <urbanek@host.sk>
+
+    * StepTalk 0.4.0 released
+
+2002 Jan 9  Stefan Urbanek <urbanek@host.sk>
+
+    * STFunctions: new function STUserConfigPath 
+    * STLanguage: new method languageForFileType:
+    * new tool stupdate_languages to create/update languages configuration file
+    
+2001 Dec 8  Stefan Urbanek <urbanek@host.sk>
+    
+    * NSInvocation+addition: return receiver (target) when return type is void
+    
+2001 Nov 19  Stefan Urbanek <urbanek@host.sk>
+    
+    * STModule: New method -classNames; returns array of names of exported 
+    classes
+    
+2001 Nov 14  Stefan Urbanek <urbanek@host.sk>
+
+    * removed force of use of users home directory for installation
+    * new module AppKit
+    * STEnvironment: new method -addAllClasses to add all Objective-C classes
+    
+2001 Nov 10  Stefan Urbanek <urbanek@host.sk>
+
+    * StepTalk 0.3.0 released
+
+2001 Nov 10  Stefan Urbanek <urbanek@host.sk>
+
+    * Added scriptable server example.
+    
+2001 Nov 9  Stefan Urbanek <urbanek@host.sk>
+
+    * STExecutor: new options: --list-objects, --list-classes and 
+    --list-all-objects
+    * Tools/stalk.m: resurected
+    * Tools/GNUmakefile: uncommented stalk tool
+    * moved initialization of STNil from STUndefinedObject to STEngine
+
+2001 Nov 6  Stefan Urbanek <urbanek@host.sk>
+
+    * STProtocolInfo: removed
+    * STBehaviourInfo, STClassInfo, STEnvironmentDescription: rewritten
+    * Environment description files changed
+
+2001 Nov 5  Stefan Urbanek <urbanek@host.sk>
+
+    * Tools/stexec: fixed bug, that caused segfault (reported by 
+    Nicola Pero <nicola@brainstorm.co.uk>)
+    * Examples: new directory with Smalltalk script examples
+    * STEnvironment: fixed restricted/full scripting. 
+    translateSelector:forReceiver: now raises an exception if selector is not
+    allowed for receiver; standardScriptingEnvironemnt renamed to 
+    defaultScriptingEnvironment and calls 
+    STEnvironmentDescription defaultEnvironmentDescriptionName
+    * STEnvrionmentDescription: New method +defaultEnvironmentDescriptionName.
+
+2001 Nov 3  Stefan Urbanek <urbanek@host.sk>
+    
+    * Tools: implemented --environment switch to use environment description 
+    with name.
+    
+2001 Nov 1  Stefan Urbanek <urbanek@host.sk>
+
+    * New ChangeLog started. Rewritten and redesigned. 
+    * Added support for multiple languages. Created Smalltalk language bundle.

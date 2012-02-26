@@ -1,0 +1,227 @@
+<html>
+
+    <head>
+    <title>STEnvironment class reference</title>
+  </head>
+  <body>
+    <font face="serif">
+    <a href="StepTalk.html">Up</a>
+    <br />
+    <h1><a name="title$STEnvironment">STEnvironment class reference</a></h1>
+    <h3>Authors</h3>
+    <dl>
+      <dt>Stefan Urbanek</dt>
+      <dd>
+      </dd>
+    </dl>
+    <p><b>Copyright:</b> (C) 2002 Free Software Foundation</p>
+
+        <div>
+    </div>
+
+          <h1><a name="001000000000">
+        Software documentation for the STEnvironment class
+      </a></h1>
+    <h2><a name="class$STEnvironment">STEnvironment</a> : <a rel="gsdoc" href="STContext.html#class$STContext">STContext</a></h2>
+    <blockquote>
+      <dl>
+        <dt><b>Declared in:</b></dt>
+        <dd>StepTalk/STEnvironment.h</dd>
+      </dl>
+    </blockquote>
+    <p>
+      
+          <em>Description forthcoming.</em>
+        
+    </p>
+    <hr width="50%" align="left" />
+    <a href="#_STEnvironment_ivars">Instance Variables</a>
+    <br/><br/>
+    <b>Method summary</b>
+    <ul>
+      <li><a rel="gsdoc" href="STEnvironment.html#method$STEnvironment+environmentWithDefaultDescription">+environmentWithDefaultDescription</a></li>
+      <li><a rel="gsdoc" href="STEnvironment.html#method$STEnvironment+environmentWithDescription:">+environmentWithDescription:</a></li>
+      <li><a rel="gsdoc" href="STEnvironment.html#method$STEnvironment+sharedEnvironment">+sharedEnvironment</a></li>
+      <li><a rel="gsdoc" href="STEnvironment.html#method$STEnvironment-addClassesWithNames:">-addClassesWithNames:</a></li>
+      <li><a rel="gsdoc" href="STEnvironment.html#method$STEnvironment-includeBundle:">-includeBundle:</a></li>
+      <li><a rel="gsdoc" href="STEnvironment.html#method$STEnvironment-includeFramework:">-includeFramework:</a></li>
+      <li><a rel="gsdoc" href="STEnvironment.html#method$STEnvironment-initWithDefaultDescription">-initWithDefaultDescription</a></li>
+      <li><a rel="gsdoc" href="STEnvironment.html#method$STEnvironment-initWithDescription:">-initWithDescription:</a></li>
+      <li><a rel="gsdoc" href="STEnvironment.html#method$STEnvironment-loadModule:">-loadModule:</a></li>
+      <li><a rel="gsdoc" href="STEnvironment.html#method$STEnvironment-registerObjectFinder:name:">-registerObjectFinder:name:</a></li>
+      <li><a rel="gsdoc" href="STEnvironment.html#method$STEnvironment-registerObjectFinderNamed:">-registerObjectFinderNamed:</a></li>
+      <li><a rel="gsdoc" href="STEnvironment.html#method$STEnvironment-removeObjectFinderWithName:">-removeObjectFinderWithName:</a></li>
+      <li><a rel="gsdoc" href="STEnvironment.html#method$STEnvironment-translateSelector:forReceiver:">-translateSelector:forReceiver:</a></li>
+    </ul>
+    <hr width="50%" align="left" />
+    <h3><a name="method$STEnvironment+environmentWithDefaultDescription">environmentWithDefaultDescription&nbsp;</a></h3>
+    + (<a rel="gsdoc" href="#class$STEnvironment">STEnvironment</a>*) <b>environmentWithDefaultDescription</b>;<br />
+    <p>
+      
+            Creates and initialises new scripting environment
+            using default description.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STEnvironment+environmentWithDescription:">environmentWithDescription:&nbsp;</a></h3>
+    + (id) <b>environmentWithDescription:</b> (<a rel="gsdoc" href="STEnvironmentDescription.html#class$STEnvironmentDescription">STEnvironmentDescription</a>*)aDescription;<br />
+    <p>
+      
+            Creates and initialises scripting environment using
+            environment description <var>description</var>.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STEnvironment+sharedEnvironment">sharedEnvironment&nbsp;</a></h3>
+    + (id) <b>sharedEnvironment</b>;<br />
+    <p>
+      
+            Creating environment <br /> Returns an instance of
+            the scripting environment that is shared in the scope
+            of actual application or process.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STEnvironment-addClassesWithNames:">addClassesWithNames:&nbsp;</a></h3>
+    - (void) <b>addClassesWithNames:</b> (NSArray*)names;<br />
+    <p>
+      
+            Add classes specified by the <var>names</var> in the
+            <var>names</var> array. This method is used
+            internally to add classes provided by modules.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STEnvironment-includeBundle:">includeBundle:&nbsp;</a></h3>
+    - (BOOL) <b>includeBundle:</b> (NSBundle*)aBundle;<br />
+    <p>
+      
+            Include scripting capabilities advertised by the
+            bundle 
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STEnvironment-includeFramework:">includeFramework:&nbsp;</a></h3>
+    - (BOOL) <b>includeFramework:</b> (NSString*)frameworkName;<br />
+    <p>
+      
+            Include scripting capabilities advertised by the
+            framework with name
+            
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STEnvironment-initWithDefaultDescription">initWithDefaultDescription&nbsp;</a></h3>
+    - (id) <b>initWithDefaultDescription</b>;<br />
+This is a designated initialiser for the class.<br />
+    <p>
+      
+            Initialises scripting environment using default
+            description.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STEnvironment-initWithDescription:">initWithDescription:&nbsp;</a></h3>
+    - (id) <b>initWithDescription:</b> (bycopy <a rel="gsdoc" href="STEnvironmentDescription.html#class$STEnvironmentDescription">STEnvironmentDescription</a>*)aDescription;<br />
+    <p>
+      
+            Initialises scripting environment using
+            scripting description <var>aDescription</var>.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STEnvironment-loadModule:">loadModule:&nbsp;</a></h3>
+    - (void) <b>loadModule:</b> (NSString*)moduleName;<br />
+    <p>
+      
+            Modules <br /> Load StepTalk module with the name
+            <var>moduleName</var>. Modules are stored in the
+            Library/StepTalk/Modules
+            directory.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STEnvironment-registerObjectFinder:name:">registerObjectFinder:&nbsp;name:&nbsp;</a></h3>
+    - (void) <b>registerObjectFinder:</b> (id)finder<b> name:</b> (NSString*)name;<br />
+    <p>
+      
+            Distributed objects <br /> Register object
+            <var>finder</var> <var>finder</var> under the
+            <var>name</var> <var>name</var>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STEnvironment-registerObjectFinderNamed:">registerObjectFinderNamed:&nbsp;</a></h3>
+    - (void) <b>registerObjectFinderNamed:</b> (NSString*)name;<br />
+    <p>
+      
+            Register object finder named <var>name</var>. This
+            method will try to find an object finder bundle in
+            Library/StepTalk/Finders
+            directories.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STEnvironment-removeObjectFinderWithName:">removeObjectFinderWithName:&nbsp;</a></h3>
+    - (void) <b>removeObjectFinderWithName:</b> (NSString*)name;<br />
+    <p>
+      
+            Remove object finder with <var>name</var>
+            <var>name</var>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STEnvironment-translateSelector:forReceiver:">translateSelector:&nbsp;forReceiver:&nbsp;</a></h3>
+    - (NSString*) <b>translateSelector:</b> (NSString*)aString<b> forReceiver:</b> (id)anObject;<br />
+    <p>
+      
+            Selector translation
+          
+    </p>
+    <hr width="25%" align="left" />
+<a name="_STEnvironment_ivars"/>    <br/><hr width="50%" align="left" />
+    <h2>Instance Variables for STEnvironment Class</h2>
+    <h3><a name="ivariable$STEnvironment*classes">classes</a></h3>
+    @protected NSMutableDictionary* <b>classes</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="ivariable$STEnvironment*description">description</a></h3>
+    @protected STEnvironmentDescription* <b>description</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="ivariable$STEnvironment*infoCache">infoCache</a></h3>
+    @protected NSMutableDictionary* <b>infoCache</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="ivariable$STEnvironment*loadedBundles">loadedBundles</a></h3>
+    @protected NSMutableArray* <b>loadedBundles</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="ivariable$STEnvironment*objectFinders">objectFinders</a></h3>
+    @protected NSMutableDictionary* <b>objectFinders</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <br/><hr width="50%" align="left" /><br/>
+    <br />
+    <a href="StepTalk.html">Up</a>
+    </font>
+</body>
+</html>

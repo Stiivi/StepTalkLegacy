@@ -1,0 +1,1 @@
+make debug=yes && openapp ScriptPapers.debug

@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STRemoteConversation" up="StepTalk">
+  <head>
+    <title>STRemoteConversation class documentation</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2002 Free Software Foundation</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the STRemoteConversation
+        class
+      </heading>
+      <class name="STRemoteConversation" super="STConversation">
+        <declared>StepTalk/STRemoteConversation.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <ivariable type="NSConnection*" name="connection" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSString*" name="environmentName" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSDistantObject&lt;STEnvironmentProcess&gt;*" name="environmentProcess" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSString*" name="hostName" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSDistantObject&lt;STConversation&gt;*" name="proxy" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <method type="void">
+          <sel>close</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>initWithEnvironmentName:</sel>
+          <arg type="NSString*">envName</arg>
+          <sel>host:</sel>
+          <arg type="NSString*">host</arg>
+          <sel>language:</sel>
+          <arg type="NSString*">langName</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>open</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </class>
+    </chapter>
+    <chapter>
+      <heading>
+        Software documentation for the STEnvironmentProcess
+        protocol
+      </heading>
+      <protocol name="STEnvironmentProcess">
+        <declared>StepTalk/STRemoteConversation.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <method type="STConversation*">
+          <sel>createConversation</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </protocol>
+    </chapter>
+  </body>
+</gsdoc>

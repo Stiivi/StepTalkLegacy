@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 0.6.7//EN" "http://www.gnustep.org/gsdoc-0_6_7.xml">
+<gsdoc base="StepTalk">
+
+<head>
+    <title>StepTalk Documentation</title>
+
+    <author name="Stefan Urbanek">
+        <email address="urbanek@host.sk"/>
+        <url url="http://urbanek.host.sk"/>
+    </author>
+
+    <version>0.7.1</version>
+
+    <date>2003 Apr 22</date>
+</head>
+
+<body>
+
+<chapter>
+<heading>Introduction</heading>
+
+<p>
+        
+        StepTalk is a scripting framework for creating scriptable servers or
+        applications. StepTalk, when combined with the dynamism that the
+        Objective-C language provides, goes way beyond mere scripting.  intro
+
+</p>
+</chapter>
+ 
+
+<back>
+    <index scope="project" type="class" />
+    <index scope="project" type="protocol" />
+</back>
+
+</body>
+</gsdoc>

@@ -1,0 +1,80 @@
+{
+    ScriptingInfoClass = STGDL2Module;
+    
+    Classes = (
+        /* Classes from EOAccess */
+        
+        EOAccessArrayFaultHandler,
+        EOAccessFaultHandler,
+        EOAccessGenericFaultHandler,
+        EOAdaptor,
+        EOAdaptor,
+        EOAdaptorChannel,
+        EOAdaptorContext,
+        EOAdaptorOperation,
+        EOAndQualifier,
+        EOAttribute,
+        EODatabase,
+        EODatabaseChannel,
+        EODatabaseContext,
+        EODatabaseDataSource,
+        EODatabaseOperation,
+        EOEditingContext,
+        EOEntity,
+        EOEntityClassDescription,
+        EOExpressionArray,
+        EOJoin,
+        EOKeyComparisonQualifier,
+        EOKeyValueQualifier,
+        /* EOLoginPanel, */
+        EOModel,
+        EOModelGroup,
+        EONotQualifier,
+        EOObjectStoreCoordinator,
+        EOOrQualifier,
+        EORelationship,
+        EOSQLExpression,
+        EOSQLQualifier,
+        EOStoredProcedure,
+
+        /* Classees from EOControl */
+
+        EOAndQualifier,
+        EOCheapCopyArray,
+        EOCheapCopyMutableArray,
+        EOClassDescription,
+        EOCooperatingObjectStore,
+        EODataSource,
+        /* EODelayedObserver, */
+        /* EODelayedObserverQueue, */
+        EODetailDataSource,
+        EOEditingContext,
+        EOFault,
+        EOFaultHandler,
+        EOFetchSpecification,
+        EOGenericRecord,
+        EOGlobalID,
+        EOKeyComparisonQualifier,
+        EOKeyGlobalID,
+        EOKeyValueArchiver,
+        EOKeyValueQualifier,
+        EOKeyValueUnarchiver,
+        EOMKKDArrayMapping,
+        EOMKKDInitializer,
+        EOMKKDKeyEnumerator,
+        EOMKKDSubsetMapping,
+        EOMutableKnownKeyDictionary,
+        EONotQualifier,
+        EONull,
+        EOObjectStore,
+        EOObjectStoreCoordinator,
+        EOObserverCenter,
+        /* EOObserverProxy, */
+        EOOrQualifier,
+        EOQualifier,
+        EOQualifierVariable,
+        EOSortOrdering,
+        EOTemporaryGlobalID,
+        EOUndoManager
+     );
+}

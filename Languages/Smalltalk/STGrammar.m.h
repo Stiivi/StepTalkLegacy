@@ -1,0 +1,23 @@
+#ifndef YYSTYPE
+#define YYSTYPE int
+#endif
+#define	TK_SEPARATOR	258
+#define	TK_BAR	259
+#define	TK_ASSIGNMENT	260
+#define	TK_LPAREN	261
+#define	TK_RPAREN	262
+#define	TK_BLOCK_OPEN	263
+#define	TK_BLOCK_CLOSE	264
+#define	TK_ARRAY_OPEN	265
+#define	TK_DOT	266
+#define	TK_COLON	267
+#define	TK_SEMICOLON	268
+#define	TK_RETURN	269
+#define	TK_IDENTIFIER	270
+#define	TK_BINARY_SELECTOR	271
+#define	TK_KEYWORD	272
+#define	TK_NUMBER	273
+#define	TK_SYMBOL	274
+#define	TK_STRING	275
+#define	TK_CHARACTER	276
+

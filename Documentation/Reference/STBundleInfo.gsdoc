@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STBundleInfo" up="StepTalk">
+  <head>
+    <title>STBundleInfo class documentation</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2002 Free Software Foundation</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the STBundleInfo class
+      </heading>
+      <class name="STBundleInfo" super="NSObject">
+        <declared>StepTalk/STBundleInfo.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <ivariable type="NSArray*" name="allClasses" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSBundle*" name="bundle" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSDictionary*" name="objectReferenceDictionary" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSArray*" name="publicClasses" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="Class" name="scriptingInfoClass" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSString*" name="scriptingInfoClassName" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="BOOL" name="useAllClasses" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <method type="id" factory="yes">
+          <sel>infoForBundle:</sel>
+          <arg type="NSBundle*">aBundle</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSArray*">
+          <sel>allClassNames</sel>
+          <desc>
+            Return an array of all class names.
+          </desc>
+        </method>
+        <method type="id" init="yes">
+          <sel>initWithBundle:</sel>
+          <arg type="NSBundle*">aBundle</arg>
+          <desc>
+            Initialize info with bundle <var>aBundle</var>.
+          </desc>
+        </method>
+        <method type="NSDictionary*">
+          <sel>namedObjects</sel>
+          <desc>
+            Return a dictionary of named objects. Named objects
+            are get from scripting info class specified in
+            ScriptingInfo.plist.
+          </desc>
+        </method>
+        <method type="NSDictionary*">
+          <sel>objectReferenceDictionary</sel>
+          <desc>
+            This method is for application scripting support.
+            Return dictionary containing object references where
+            a key is name of an object and value is a path to the
+            object relative to application delegate.
+          </desc>
+        </method>
+        <method type="NSArray*">
+          <sel>publicClassNames</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </class>
+    </chapter>
+    <chapter>
+      <heading>
+        Software documentation for the NSBundle(STAdditions)
+        category
+      </heading>
+      <category name="STAdditions" class="NSBundle">
+        <declared>StepTalk/STBundleInfo.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <method type="NSArray*" factory="yes">
+          <sel>allFrameworkNames</sel>
+          <desc>
+            Return names of all available frameworks in the
+            system.
+          </desc>
+        </method>
+        <method type="NSBundle*" factory="yes">
+          <sel>bundleForFrameworkWithName:</sel>
+          <arg type="NSString*">aName</arg>
+          <desc>
+            Return bundle for framework with name
+            <var>aName</var>.
+          </desc>
+        </method>
+        <method type="NSString*" factory="yes">
+          <sel>pathForFrameworkWithName:</sel>
+          <arg type="NSString*">aName</arg>
+          <desc>
+            Return path for framework with name <var>aName</var>
+            .
+          </desc>
+        </method>
+        <method type="NSArray*" factory="yes">
+          <sel>stepTalkBundleNames</sel>
+          <desc>
+            Get list of all StepTalk bundles from
+            Library/StepTalk/Bundles
+          </desc>
+        </method>
+        <method type="id" factory="yes">
+          <sel>stepTalkBundleWithName:</sel>
+          <arg type="NSString*">moduleName</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSDictionary*">
+          <sel>scriptingInfoDictionary</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </category>
+    </chapter>
+  </body>
+</gsdoc>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STFunctions" up="StepTalk">
+  <head>
+    <title>STFunctions documentation</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2002 Free Software Foundation</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>STFunctions functions</heading>
+      <p></p>
+      <function type="NSArray*" name="STFindAllResources">
+        <arg type="NSString*">resourceDir</arg>
+        <arg type="NSString*">extension</arg>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </function>
+      <function type="NSString*" name="STFindResource">
+        <arg type="NSString*">name</arg>
+        <arg type="NSString*">resourceDir</arg>
+        <arg type="NSString*">extension</arg>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </function>
+      <function type="NSString*" name="STUserConfigPath">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </function>
+    </chapter>
+  </body>
+</gsdoc>

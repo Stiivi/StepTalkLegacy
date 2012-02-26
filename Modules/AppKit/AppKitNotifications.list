@@ -1,0 +1,82 @@
+# AppKit Notifications
+
+id NSColorListChangedNotification
+id NSColorPanelColorChangedNotification
+
+# id NSComboBoxWillPopUpNotification
+# id NSComboBoxWillDismissNotification
+# id NSComboBoxSelectionDidChangeNotification
+# id NSComboBoxSelectionIsChangingNotification
+
+id NSControlTextDidBeginEditingNotification
+id NSControlTextDidEndEditingNotification
+id NSControlTextDidChangeNotification
+
+id NSDrawerDidCloseNotification
+id NSDrawerDidOpenNotification
+id NSDrawerWillCloseNotification
+id NSDrawerWillOpenNotification
+
+id NSImageRepRegistryChangedNotification
+
+
+##################################################
+# FIXME: Undefined symbols
+#
+# id NSOutlineViewColumnDidMoveNotification
+# id NSOutlineViewColumnDidResizeNotification
+# id NSOutlineViewSelectionDidChangeNotification
+# id NSOutlineViewSelectionIsChangingNotification
+# id NSOutlineViewItemDidExpandNotification
+# id NSOutlineViewItemDidCollapseNotification
+#
+##################################################
+
+
+id NSPopUpButtonWillPopUpNotification
+
+id NSSplitViewDidResizeSubviewsNotification
+id NSSplitViewWillResizeSubviewsNotification
+
+id NSTableViewColumnDidMoveNotification
+id NSTableViewColumnDidResizeNotification
+id NSTableViewSelectionDidChangeNotification
+id NSTableViewSelectionIsChangingNotification
+
+id NSTextDidBeginEditingNotification
+id NSTextDidEndEditingNotification
+id NSTextDidChangeNotification
+
+id NSTextStorageWillProcessEditingNotification
+id NSTextStorageDidProcessEditingNotification
+
+id NSTextViewWillChangeNotifyingTextViewNotification
+id NSTextViewDidChangeSelectionNotification
+
+id NSViewFrameDidChangeNotification
+id NSViewBoundsDidChangeNotification
+id NSViewFocusDidChangeNotification
+
+id NSWindowDidBecomeKeyNotification
+id NSWindowDidBecomeMainNotification
+id NSWindowDidChangeScreenNotification
+id NSWindowDidDeminiaturizeNotification
+id NSWindowDidExposeNotification
+id NSWindowDidMiniaturizeNotification
+id NSWindowDidMoveNotification
+id NSWindowDidResignKeyNotification
+id NSWindowDidResignMainNotification
+id NSWindowDidResizeNotification
+id NSWindowDidUpdateNotification
+id NSWindowWillCloseNotification
+id NSWindowWillMiniaturizeNotification
+id NSWindowWillMoveNotification
+
+id NSWorkspaceDidLaunchApplicationNotification
+id NSWorkspaceDidMountNotification
+id NSWorkspaceDidPerformFileOperationNotification
+id NSWorkspaceDidTerminateApplicationNotification
+id NSWorkspaceDidUnmountNotification
+id NSWorkspaceWillLaunchApplicationNotification
+id NSWorkspaceWillPowerOffNotification
+id NSWorkspaceWillUnmountNotification

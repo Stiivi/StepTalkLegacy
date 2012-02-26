@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STExterns" up="StepTalk">
+  <head>
+    <title>STExterns documentation</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2002 Free Software Foundation</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>STExterns variables</heading>
+      <p></p>
+      <variable type="NSString*" name="STGenericException">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </variable>
+      <variable type="NSString*" name="STInternalInconsistencyException">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </variable>
+      <variable type="NSString*" name="STInvalidArgumentException">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </variable>
+      <variable type="NSString*" name="STLanguageBundleExtension">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </variable>
+      <variable type="NSString*" name="STLanguageBundlesDirectory">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </variable>
+      <variable type="NSString*" name="STLanguagesConfigFile">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </variable>
+      <variable type="NSString*" name="STLibraryDirectory">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </variable>
+      <variable type="NSZone*" name="STMallocZone">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </variable>
+      <variable type="NSString*" name="STModuleExtension">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </variable>
+      <variable type="NSString*" name="STModulesDirectory">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </variable>
+      <variable type="STUndefinedObject*" name="STNil">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </variable>
+      <variable type="NSString*" name="STScriptExtension">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </variable>
+      <variable type="NSString*" name="STScriptingEnvironmentExtension">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </variable>
+      <variable type="NSString*" name="STScriptingEnvironmentsDirectory">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </variable>
+      <variable type="NSString*" name="STScriptingException">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </variable>
+      <variable type="NSString*" name="STScriptsDirectory">
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </variable>
+    </chapter>
+  </body>
+</gsdoc>

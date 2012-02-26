@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STMethod" up="StepTalk">
+  <head>
+    <title>STMethod documentation</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2003 Free Software Foundation</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the STMethod protocol
+      </heading>
+      <protocol name="STMethod">
+        <declared>StepTalk/STMethod.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <method type="NSString*">
+          <sel>languageName</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>methodName</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>source</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </protocol>
+    </chapter>
+  </body>
+</gsdoc>

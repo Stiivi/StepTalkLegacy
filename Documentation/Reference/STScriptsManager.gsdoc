@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STScriptsManager" up="StepTalk">
+  <head>
+    <title>STScriptsManager class documentation</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2002 Stefan Urbanek</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the STScriptsManager class
+      </heading>
+      <class name="STScriptsManager" super="NSObject">
+        <declared>StepTalk/STScriptsManager.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <ivariable type="NSArray*" name="scriptSearchPaths" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSString*" name="scriptsDomainName" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <method type="id" factory="yes">
+          <sel>defaultManager</sel>
+          <desc>
+            Returns default scripts manager for current process
+            (application or tool).
+          </desc>
+        </method>
+        <method type="NSArray*">
+          <sel>allScripts</sel>
+          <desc>
+            Return list of all scripts for managed domain.
+          </desc>
+        </method>
+        <method type="id" init="yes">
+          <sel>initWithDomainName:</sel>
+          <arg type="NSString*">name</arg>
+          <desc>
+            Initializes the receiver to be used with domain
+            named <var>name</var>. If <var>name</var> is
+            <code>nil</code>, default scripts domain
+            <var>name</var> will be used.
+          </desc>
+        </method>
+        <method type="NSArray*">
+          <sel>scriptSearchPaths</sel>
+          <desc>
+            Retrun an array of script search paths. Scripts are
+            searched in Library/StepTalk/Scripts/
+            <var>scriptsDomainName</var>,
+            Library/StepTalk/Scripts/Shared
+            and in all loaded bundles in <var>bundlePath</var>
+            /Resources/Scripts.
+          </desc>
+        </method>
+        <method type="STFileScript*">
+          <sel>scriptWithName:</sel>
+          <arg type="NSString*">aString</arg>
+          <desc>
+            Get a script with name <var>aString</var> for current
+            scripting domain.
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>scriptsDomainName</sel>
+          <desc>
+            Return name of script manager domain.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setScriptSearchPaths:</sel>
+          <arg type="NSArray*">anArray</arg>
+          <desc>
+            Set script search paths to <var>anArray</var>.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setScriptSearchPathsToDefaults</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSArray*">
+          <sel>validScriptSearchPaths</sel>
+          <desc>
+            Return script search paths that are valid. That
+            means that path exists and is a directory.
+          </desc>
+        </method>
+      </class>
+    </chapter>
+  </body>
+</gsdoc>

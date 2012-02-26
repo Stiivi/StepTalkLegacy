@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="NSInvocation+additions" up="StepTalk">
+  <head>
+    <title>NSInvocation class additions</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2002 Free Software Foundation</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the
+        NSInvocation(STAdditions) category
+      </heading>
+      <category name="STAdditions" class="NSInvocation">
+        <declared>StepTalk/NSInvocation+additions.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <method type="id" factory="yes">
+          <sel>invocationWithTarget:</sel>
+          <arg type="id">target</arg>
+          <sel>selector:</sel>
+          <arg type="SEL">selector</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id" factory="yes">
+          <sel>invocationWithTarget:</sel>
+          <arg type="id">target</arg>
+          <sel>selectorName:</sel>
+          <arg type="NSString*">selectorName</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>getArgumentAsObjectAtIndex:</sel>
+          <arg type="int">anIndex</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>returnValueAsObject</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setArgumentAsObject:</sel>
+          <arg type="id">anObject</arg>
+          <sel>atIndex:</sel>
+          <arg type="int">anIndex</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </category>
+    </chapter>
+    <chapter>
+      <heading>NSInvocation+additions functions</heading>
+      <p></p>
+      <function type="void" name="STGetValueOfTypeFromObject">
+        <arg type="void*">value</arg>
+        <arg type="const char*">type</arg>
+        <arg type="id">anObject</arg>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </function>
+      <function type="id" name="STObjectFromValueOfType">
+        <arg type="void*">value</arg>
+        <arg type="const char*">type</arg>
+        <desc>
+          This method is a factory method, that means that you
+          have to release the object when you no longer need it.
+        </desc>
+      </function>
+    </chapter>
+  </body>
+</gsdoc>

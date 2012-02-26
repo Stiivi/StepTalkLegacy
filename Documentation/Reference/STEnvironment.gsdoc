@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STEnvironment" up="StepTalk">
+  <head>
+    <title>STEnvironment class reference</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2002 Free Software Foundation</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the STEnvironment class
+      </heading>
+      <class name="STEnvironment" super="STContext">
+        <declared>StepTalk/STEnvironment.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <ivariable type="NSMutableDictionary*" name="classes" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="STEnvironmentDescription*" name="description" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSMutableDictionary*" name="infoCache" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSMutableArray*" name="loadedBundles" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSMutableDictionary*" name="objectFinders" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <method type="STEnvironment*" factory="yes">
+          <sel>environmentWithDefaultDescription</sel>
+          <desc>
+            Creates and initialises new scripting environment
+            using default description.
+          </desc>
+        </method>
+        <method type="id" factory="yes">
+          <sel>environmentWithDescription:</sel>
+          <arg type="STEnvironmentDescription*">aDescription</arg>
+          <desc>
+            Creates and initialises scripting environment using
+            environment description <var>description</var>.
+          </desc>
+        </method>
+        <method type="id" factory="yes">
+          <sel>sharedEnvironment</sel>
+          <desc>
+            Creating environment <br /> Returns an instance of
+            the scripting environment that is shared in the scope
+            of actual application or process.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>addClassesWithNames:</sel>
+          <arg type="NSArray*">names</arg>
+          <desc>
+            Add classes specified by the <var>names</var> in the
+            <var>names</var> array. This method is used
+            internally to add classes provided by modules.
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>includeBundle:</sel>
+          <arg type="NSBundle*">aBundle</arg>
+          <desc>
+            Include scripting capabilities advertised by the
+            bundle <ivar><var>aBundle</var></ivar>. If the
+            bundle is already loaded, nothing happens.
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>includeFramework:</sel>
+          <arg type="NSString*">frameworkName</arg>
+          <desc>
+            Include scripting capabilities advertised by the
+            framework with name
+            <ivar><var>frameworkName</var></ivar>. If the
+            framework is already loaded, nothing happens.
+          </desc>
+        </method>
+        <method type="id" init="yes">
+          <sel>initWithDefaultDescription</sel>
+          <desc>
+            Initialises scripting environment using default
+            description.
+          </desc>
+        </method>
+        <method type="id">
+          <sel>initWithDescription:</sel>
+          <arg type="bycopy STEnvironmentDescription*">aDescription</arg>
+          <desc>
+            Initialises scripting environment using
+            scripting description <var>aDescription</var>.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>loadModule:</sel>
+          <arg type="NSString*">moduleName</arg>
+          <desc>
+            Modules <br /> Load StepTalk module with the name
+            <var>moduleName</var>. Modules are stored in the
+            Library/StepTalk/Modules
+            directory.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>registerObjectFinder:</sel>
+          <arg type="id">finder</arg>
+          <sel>name:</sel>
+          <arg type="NSString*">name</arg>
+          <desc>
+            Distributed objects <br /> Register object
+            <var>finder</var> <var>finder</var> under the
+            <var>name</var> <var>name</var>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>registerObjectFinderNamed:</sel>
+          <arg type="NSString*">name</arg>
+          <desc>
+            Register object finder named <var>name</var>. This
+            method will try to find an object finder bundle in
+            Library/StepTalk/Finders
+            directories.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>removeObjectFinderWithName:</sel>
+          <arg type="NSString*">name</arg>
+          <desc>
+            Remove object finder with <var>name</var>
+            <var>name</var>
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>translateSelector:</sel>
+          <arg type="NSString*">aString</arg>
+          <sel>forReceiver:</sel>
+          <arg type="id">anObject</arg>
+          <desc>
+            Selector translation
+          </desc>
+        </method>
+      </class>
+    </chapter>
+  </body>
+</gsdoc>

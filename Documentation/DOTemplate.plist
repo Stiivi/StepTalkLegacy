@@ -1,0 +1,20 @@
+/* DOTemplate.plist 
+
+    This file contains template for a distributed object in the distributed 
+    environment.
+    
+    File name is name of the object used in the environment.
+
+    DO files should reside in:
+    
+        any_gnustep_root/Library/StepTalk/DistributedObjects
+*/
+
+{
+    Host = "default host name";
+    Hosts = ( list of hosts to be searched );
+    Tool = "name of a tool that will register the object";
+    Arguments = (tool arguments);
+    Name = "name of the object to be connected";
+    Wait = seconds to wait before connection after the tool is launched;
+}

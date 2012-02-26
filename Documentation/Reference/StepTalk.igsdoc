@@ -1,0 +1,1117 @@
+{
+    categories = {
+	NSBundle = {
+	    STAdditions = STBundleInfo;
+	};
+	NSInvocation = {
+	    STAdditions = "NSInvocation+additions";
+	};
+	NSObject = {
+	    STAdditions = "NSObject+additions";
+	    STScripting = STScripting;
+	};
+    };
+    category = {
+	"NSBundle(STAdditions)" = STBundleInfo;
+	"NSInvocation(STAdditions)" = "NSInvocation+additions";
+	"NSObject(STAdditions)" = "NSObject+additions";
+	"NSObject(STScripting)" = STScripting;
+    };
+    class = {
+	STActor = STActor;
+	STBundleInfo = STBundleInfo;
+	STContext = STContext;
+	STConversation = STConversation;
+	STEngine = STEngine;
+	STEnvironment = STEnvironment;
+	STEnvironmentDescription = STEnvironmentDescription;
+	STFileScript = STFileScript;
+	STLanguageManager = STLanguageManager;
+	STObjectReference = STObjectReference;
+	STRemoteConversation = STRemoteConversation;
+	STScript = STScript;
+	STScriptObject = STScriptObject;
+	STScriptsManager = STScriptsManager;
+	STSelector = STSelector;
+	STUndefinedObject = STUndefinedObject;
+    };
+    classvars = {
+	STActor = {
+	    environment = STActor;
+	    ivars = STActor;
+	    methodDictionary = STActor;
+	};
+	STBundleInfo = {
+	    allClasses = STBundleInfo;
+	    bundle = STBundleInfo;
+	    objectReferenceDictionary = STBundleInfo;
+	    publicClasses = STBundleInfo;
+	    scriptingInfoClass = STBundleInfo;
+	    scriptingInfoClassName = STBundleInfo;
+	    useAllClasses = STBundleInfo;
+	};
+	STContext = {
+	    createsUnknownObjects = STContext;
+	    fullScripting = STContext;
+	    objectDictionary = STContext;
+	    parentContext = STContext;
+	};
+	STConversation = {
+	    context = STConversation;
+	    engine = STConversation;
+	    languageName = STConversation;
+	    returnValue = STConversation;
+	};
+	STEnvironment = {
+	    classes = STEnvironment;
+	    description = STEnvironment;
+	    infoCache = STEnvironment;
+	    loadedBundles = STEnvironment;
+	    objectFinders = STEnvironment;
+	};
+	STEnvironmentDescription = {
+	    aliases = STEnvironmentDescription;
+	    behaviours = STEnvironmentDescription;
+	    classes = STEnvironmentDescription;
+	    finders = STEnvironmentDescription;
+	    frameworks = STEnvironmentDescription;
+	    modules = STEnvironmentDescription;
+	    restriction = STEnvironmentDescription;
+	    usedDefs = STEnvironmentDescription;
+	};
+	STFileScript = {
+	    description = STFileScript;
+	    fileName = STFileScript;
+	    localizedName = STFileScript;
+	    menuKey = STFileScript;
+	};
+	STLanguageManager = {
+	    engineClasses = STLanguageManager;
+	    fileTypes = STLanguageManager;
+	    languageBundles = STLanguageManager;
+	    languageInfos = STLanguageManager;
+	    languages = STLanguageManager;
+	};
+	STObjectReference = {
+	    identifier = STObjectReference;
+	    target = STObjectReference;
+	};
+	STRemoteConversation = {
+	    connection = STRemoteConversation;
+	    environmentName = STRemoteConversation;
+	    environmentProcess = STRemoteConversation;
+	    hostName = STRemoteConversation;
+	    proxy = STRemoteConversation;
+	};
+	STScript = {
+	    language = STScript;
+	    source = STScript;
+	};
+	STScriptObject = {
+	    environment = STScriptObject;
+	    ivars = STScriptObject;
+	    methodDictionary = STScriptObject;
+	};
+	STScriptsManager = {
+	    scriptSearchPaths = STScriptsManager;
+	    scriptsDomainName = STScriptsManager;
+	};
+	STSelector = {
+	    sel = STSelector;
+	    selectorName = STSelector;
+	};
+    };
+    function = {
+	STAllObjectiveCClasses = STObjCRuntime;
+	STAllObjectiveCSelectors = STObjCRuntime;
+	STClassDictionaryWithNames = STObjCRuntime;
+	STConstructMethodSignatureForSelector = STObjCRuntime;
+	STFindAllResources = STFunctions;
+	STFindResource = STFunctions;
+	STGetFoundationConstants = STObjCRuntime;
+	STGetValueOfTypeFromObject = "NSInvocation+additions";
+	STMethodSignatureForSelector = STObjCRuntime;
+	STObjectFromValueOfType = "NSInvocation+additions";
+	STSelectorFromString = STObjCRuntime;
+	STSelectorFromValue = STObjCRuntime;
+	STUserConfigPath = STFunctions;
+	STValueFromSelector = STObjCRuntime;
+    };
+    ivariable = {
+	aliases = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+	allClasses = {
+	    STBundleInfo = STBundleInfo;
+	};
+	behaviours = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+	bundle = {
+	    STBundleInfo = STBundleInfo;
+	};
+	classes = {
+	    STEnvironment = STEnvironment;
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+	connection = {
+	    STRemoteConversation = STRemoteConversation;
+	};
+	context = {
+	    STConversation = STConversation;
+	};
+	createsUnknownObjects = {
+	    STContext = STContext;
+	};
+	description = {
+	    STEnvironment = STEnvironment;
+	    STFileScript = STFileScript;
+	};
+	engine = {
+	    STConversation = STConversation;
+	};
+	engineClasses = {
+	    STLanguageManager = STLanguageManager;
+	};
+	environment = {
+	    STActor = STActor;
+	    STScriptObject = STScriptObject;
+	};
+	environmentName = {
+	    STRemoteConversation = STRemoteConversation;
+	};
+	environmentProcess = {
+	    STRemoteConversation = STRemoteConversation;
+	};
+	fileName = {
+	    STFileScript = STFileScript;
+	};
+	fileTypes = {
+	    STLanguageManager = STLanguageManager;
+	};
+	finders = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+	frameworks = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+	fullScripting = {
+	    STContext = STContext;
+	};
+	hostName = {
+	    STRemoteConversation = STRemoteConversation;
+	};
+	identifier = {
+	    STObjectReference = STObjectReference;
+	};
+	infoCache = {
+	    STEnvironment = STEnvironment;
+	};
+	ivars = {
+	    STActor = STActor;
+	    STScriptObject = STScriptObject;
+	};
+	language = {
+	    STScript = STScript;
+	};
+	languageBundles = {
+	    STLanguageManager = STLanguageManager;
+	};
+	languageInfos = {
+	    STLanguageManager = STLanguageManager;
+	};
+	languageName = {
+	    STConversation = STConversation;
+	};
+	languages = {
+	    STLanguageManager = STLanguageManager;
+	};
+	loadedBundles = {
+	    STEnvironment = STEnvironment;
+	};
+	localizedName = {
+	    STFileScript = STFileScript;
+	};
+	menuKey = {
+	    STFileScript = STFileScript;
+	};
+	methodDictionary = {
+	    STActor = STActor;
+	    STScriptObject = STScriptObject;
+	};
+	modules = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+	objectDictionary = {
+	    STContext = STContext;
+	};
+	objectFinders = {
+	    STEnvironment = STEnvironment;
+	};
+	objectReferenceDictionary = {
+	    STBundleInfo = STBundleInfo;
+	};
+	parentContext = {
+	    STContext = STContext;
+	};
+	proxy = {
+	    STRemoteConversation = STRemoteConversation;
+	};
+	publicClasses = {
+	    STBundleInfo = STBundleInfo;
+	};
+	restriction = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+	returnValue = {
+	    STConversation = STConversation;
+	};
+	scriptSearchPaths = {
+	    STScriptsManager = STScriptsManager;
+	};
+	scriptingInfoClass = {
+	    STBundleInfo = STBundleInfo;
+	};
+	scriptingInfoClassName = {
+	    STBundleInfo = STBundleInfo;
+	};
+	scriptsDomainName = {
+	    STScriptsManager = STScriptsManager;
+	};
+	sel = {
+	    STSelector = STSelector;
+	};
+	selectorName = {
+	    STSelector = STSelector;
+	};
+	source = {
+	    STScript = STScript;
+	};
+	target = {
+	    STObjectReference = STObjectReference;
+	};
+	useAllClasses = {
+	    STBundleInfo = STBundleInfo;
+	};
+	usedDefs = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+    };
+    method = {
+	"+actorInEnvironment:" = {
+	    STActor = STActor;
+	};
+	"+allFrameworkNames" = {
+	    NSBundle = STBundleInfo;
+	};
+	"+bundleForFrameworkWithName:" = {
+	    NSBundle = STBundleInfo;
+	};
+	"+classForScripting" = {
+	    "(STScripting)" = STScripting;
+	};
+	"+className" = {
+	    "(STScripting)" = STScripting;
+	};
+	"+defaultDescriptionName" = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+	"+defaultManager" = {
+	    STLanguageManager = STLanguageManager;
+	    STScriptsManager = STScriptsManager;
+	};
+	"+descriptionFromDictionary:" = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+	"+descriptionWithName:" = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+	"+engineForLanguage:" = {
+	    STEngine = STEngine;
+	};
+	"+environmentWithDefaultDescription" = {
+	    STEnvironment = STEnvironment;
+	};
+	"+environmentWithDescription:" = {
+	    STEnvironment = STEnvironment;
+	};
+	"+infoForBundle:" = {
+	    STBundleInfo = STBundleInfo;
+	};
+	"+invocationWithTarget:selector:" = {
+	    NSInvocation = "NSInvocation+additions";
+	};
+	"+invocationWithTarget:selectorName:" = {
+	    NSInvocation = "NSInvocation+additions";
+	};
+	"+isClass" = {
+	    "(STScripting)" = STScripting;
+	};
+	"+pathForFrameworkWithName:" = {
+	    NSBundle = STBundleInfo;
+	};
+	"+scriptObject" = {
+	    STScriptObject = STScriptObject;
+	};
+	"+scriptWithFile:" = {
+	    STFileScript = STFileScript;
+	};
+	"+scriptWithSource:language:" = {
+	    STScript = STScript;
+	};
+	"+sharedEnvironment" = {
+	    STEnvironment = STEnvironment;
+	};
+	"+stepTalkBundleNames" = {
+	    NSBundle = STBundleInfo;
+	};
+	"+stepTalkBundleWithName:" = {
+	    NSBundle = STBundleInfo;
+	};
+	"-addClassesWithNames:" = {
+	    STEnvironment = STEnvironment;
+	};
+	"-addMethod:" = {
+	    STActor = STActor;
+	    STScriptObject = STScriptObject;
+	};
+	"-addNamedObjectsFromDictionary:" = {
+	    STContext = STContext;
+	};
+	"-allClassNames" = {
+	    STBundleInfo = STBundleInfo;
+	};
+	"-allScripts" = {
+	    STScriptsManager = STScriptsManager;
+	};
+	"-availableLanguages" = {
+	    STLanguageManager = STLanguageManager;
+	};
+	"-bundleForLanguage:" = {
+	    STLanguageManager = STLanguageManager;
+	};
+	"-classForScripting" = {
+	    "(STScripting)" = STScripting;
+	};
+	"-className" = {
+	    "(STScripting)" = STScripting;
+	};
+	"-classes" = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+	"-close" = {
+	    STRemoteConversation = STRemoteConversation;
+	};
+	"-compareByLocalizedName:" = {
+	    STFileScript = STFileScript;
+	};
+	"-context" = {
+	    STConversation = STConversation;
+	};
+	"-createConversation" = {
+	    "(STEnvironmentProcess)" = STRemoteConversation;
+	};
+	"-createEngineForLanguage:" = {
+	    STLanguageManager = STLanguageManager;
+	};
+	"-createsUnknownObjects" = {
+	    STContext = STContext;
+	};
+	"-defaultLanguage" = {
+	    STLanguageManager = STLanguageManager;
+	};
+	"-engineClassForLanguage:" = {
+	    STLanguageManager = STLanguageManager;
+	};
+	"-environment" = {
+	    STActor = STActor;
+	    STScriptObject = STScriptObject;
+	};
+	"-executeMethod:forReceiver:withArguments:inContext:" = {
+	    STEngine = STEngine;
+	};
+	"-fileName" = {
+	    STFileScript = STFileScript;
+	};
+	"-frameworks" = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+	"-fullScriptingEnabled" = {
+	    STContext = STContext;
+	};
+	"-getArgumentAsObjectAtIndex:" = {
+	    NSInvocation = "NSInvocation+additions";
+	};
+	"-identifier" = {
+	    STObjectReference = STObjectReference;
+	};
+	"-includeBundle:" = {
+	    STEnvironment = STEnvironment;
+	};
+	"-includeFramework:" = {
+	    STEnvironment = STEnvironment;
+	};
+	"-initFromDictionary:" = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+	"-initWithBundle:" = {
+	    STBundleInfo = STBundleInfo;
+	};
+	"-initWithContext:language:" = {
+	    STConversation = STConversation;
+	};
+	"-initWithDefaultDescription" = {
+	    STEnvironment = STEnvironment;
+	};
+	"-initWithDescription:" = {
+	    STEnvironment = STEnvironment;
+	};
+	"-initWithDomainName:" = {
+	    STScriptsManager = STScriptsManager;
+	};
+	"-initWithEnvironment:" = {
+	    STActor = STActor;
+	};
+	"-initWithEnvironmentName:host:language:" = {
+	    STRemoteConversation = STRemoteConversation;
+	};
+	"-initWithFile:" = {
+	    STFileScript = STFileScript;
+	};
+	"-initWithIdentifier:target:" = {
+	    STObjectReference = STObjectReference;
+	};
+	"-initWithInstanceVariableNames:" = {
+	    STScriptObject = STScriptObject;
+	};
+	"-initWithName:" = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	    STSelector = STSelector;
+	};
+	"-initWithSelector:" = {
+	    STSelector = STSelector;
+	};
+	"-initWithSource:language:" = {
+	    STScript = STScript;
+	};
+	"-instanceVariableNames" = {
+	    "(STScriptObject)" = STScriptObject;
+	    STScriptObject = STScriptObject;
+	};
+	"-interpretScript:" = {
+	    "(STConversation)" = STConversation;
+	};
+	"-interpretScript:inContext:" = {
+	    STEngine = STEngine;
+	};
+	"-isClass" = {
+	    "(STScripting)" = STScripting;
+	};
+	"-isNil" = {
+	    NSObject = "NSObject+additions";
+	};
+	"-isSame:" = {
+	    NSObject = "NSObject+additions";
+	};
+	"-knownLanguages" = {
+	    "(STConversation)" = STConversation;
+	};
+	"-knownObjectNames" = {
+	    STContext = STContext;
+	};
+	"-language" = {
+	    "(STConversation)" = STConversation;
+	    STConversation = STConversation;
+	    STScript = STScript;
+	};
+	"-languageName" = {
+	    "(STMethod)" = STMethod;
+	};
+	"-loadModule:" = {
+	    STEnvironment = STEnvironment;
+	};
+	"-localizedName" = {
+	    STFileScript = STFileScript;
+	};
+	"-methodDictionary" = {
+	    STActor = STActor;
+	    STScriptObject = STScriptObject;
+	};
+	"-methodFromSource:forReceiver:inContext:" = {
+	    STEngine = STEngine;
+	};
+	"-methodName" = {
+	    "(STMethod)" = STMethod;
+	};
+	"-methodNames" = {
+	    STActor = STActor;
+	    STScriptObject = STScriptObject;
+	};
+	"-methodWithName:" = {
+	    STActor = STActor;
+	    STScriptObject = STScriptObject;
+	};
+	"-modules" = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+	"-namedObjects" = {
+	    STBundleInfo = STBundleInfo;
+	};
+	"-notNil" = {
+	    NSObject = "NSObject+additions";
+	};
+	"-object" = {
+	    STObjectReference = STObjectReference;
+	};
+	"-objectDictionary" = {
+	    STContext = STContext;
+	};
+	"-objectFinders" = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+	"-objectForVariable:" = {
+	    STScriptObject = STScriptObject;
+	};
+	"-objectReferenceDictionary" = {
+	    STBundleInfo = STBundleInfo;
+	};
+	"-objectReferenceForObjectWithName:" = {
+	    STContext = STContext;
+	};
+	"-objectWithName:" = {
+	    STContext = STContext;
+	};
+	"-open" = {
+	    STRemoteConversation = STRemoteConversation;
+	};
+	"-parentContext" = {
+	    STContext = STContext;
+	};
+	"-publicClassNames" = {
+	    STBundleInfo = STBundleInfo;
+	};
+	"-registerObjectFinder:name:" = {
+	    STEnvironment = STEnvironment;
+	};
+	"-registerObjectFinderNamed:" = {
+	    STEnvironment = STEnvironment;
+	};
+	"-removeMethod:" = {
+	    STActor = STActor;
+	    STScriptObject = STScriptObject;
+	};
+	"-removeMethodWithName:" = {
+	    STActor = STActor;
+	    STScriptObject = STScriptObject;
+	};
+	"-removeObjectFinderWithName:" = {
+	    STEnvironment = STEnvironment;
+	};
+	"-removeObjectWithName:" = {
+	    STContext = STContext;
+	};
+	"-result" = {
+	    "(STConversation)" = STConversation;
+	};
+	"-resultByCopy" = {
+	    "(STConversation)" = STConversation;
+	};
+	"-returnValueAsObject" = {
+	    NSInvocation = "NSInvocation+additions";
+	};
+	"-runScriptFromString:" = {
+	    STConversation = STConversation;
+	};
+	"-scriptDescription" = {
+	    STFileScript = STFileScript;
+	};
+	"-scriptName" = {
+	    STFileScript = STFileScript;
+	};
+	"-scriptSearchPaths" = {
+	    STScriptsManager = STScriptsManager;
+	};
+	"-scriptWithName:" = {
+	    STScriptsManager = STScriptsManager;
+	};
+	"-scriptingInfoDictionary" = {
+	    NSBundle = STBundleInfo;
+	};
+	"-scriptsDomainName" = {
+	    STScriptsManager = STScriptsManager;
+	};
+	"-selectorName" = {
+	    STSelector = STSelector;
+	};
+	"-selectorValue" = {
+	    STSelector = STSelector;
+	};
+	"-setArgumentAsObject:atIndex:" = {
+	    NSInvocation = "NSInvocation+additions";
+	};
+	"-setCreatesUnknownObjects:" = {
+	    STContext = STContext;
+	};
+	"-setEnvironment:" = {
+	    STActor = STActor;
+	    STScriptObject = STScriptObject;
+	};
+	"-setFullScriptingEnabled:" = {
+	    STContext = STContext;
+	};
+	"-setLanguage:" = {
+	    "(STConversation)" = STConversation;
+	    STConversation = STConversation;
+	    STScript = STScript;
+	};
+	"-setObject:" = {
+	    STObjectReference = STObjectReference;
+	};
+	"-setObject:forName:" = {
+	    STContext = STContext;
+	};
+	"-setObject:forVariable:" = {
+	    STScriptObject = STScriptObject;
+	};
+	"-setParentContext:" = {
+	    STContext = STContext;
+	};
+	"-setScriptSearchPaths:" = {
+	    STScriptsManager = STScriptsManager;
+	};
+	"-setScriptSearchPathsToDefaults" = {
+	    STScriptsManager = STScriptsManager;
+	};
+	"-setSource:" = {
+	    STScript = STScript;
+	};
+	"-source" = {
+	    "(STMethod)" = STMethod;
+	    STScript = STScript;
+	};
+	"-target" = {
+	    STObjectReference = STObjectReference;
+	};
+	"-translateSelector:forReceiver:" = {
+	    STEnvironment = STEnvironment;
+	};
+	"-understandsCode:" = {
+	    STEngine = STEngine;
+	};
+	"-updateClassWithName:description:" = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+	"-updateFromDictionary:" = {
+	    STEnvironmentDescription = STEnvironmentDescription;
+	};
+	"-validScriptSearchPaths" = {
+	    STScriptsManager = STScriptsManager;
+	};
+    };
+    output = {
+	"NSInvocation+additions.h" = (
+	    "../../Documentation/Reference/NSInvocation+additions.gsdoc"
+	);
+	"NSObject+additions.h" = (
+	    "../../Documentation/Reference/NSObject+additions.gsdoc"
+	);
+	STActor.h = (
+	    ../../Documentation/Reference/STActor.gsdoc
+	);
+	STBundleInfo.h = (
+	    ../../Documentation/Reference/STBundleInfo.gsdoc
+	);
+	STContext.h = (
+	    ../../Documentation/Reference/STContext.gsdoc
+	);
+	STConversation.h = (
+	    ../../Documentation/Reference/STConversation.gsdoc
+	);
+	STEngine.h = (
+	    ../../Documentation/Reference/STEngine.gsdoc
+	);
+	STEnvironment.h = (
+	    ../../Documentation/Reference/STEnvironment.gsdoc
+	);
+	STEnvironmentDescription.h = (
+	    ../../Documentation/Reference/STEnvironmentDescription.gsdoc
+	);
+	STExterns.h = (
+	    ../../Documentation/Reference/STExterns.gsdoc
+	);
+	STFileScript.h = (
+	    ../../Documentation/Reference/STFileScript.gsdoc
+	);
+	STFunctions.h = (
+	    ../../Documentation/Reference/STFunctions.gsdoc
+	);
+	STLanguageManager.h = (
+	    ../../Documentation/Reference/STLanguageManager.gsdoc
+	);
+	STMethod.h = (
+	    ../../Documentation/Reference/STMethod.gsdoc
+	);
+	STObjCRuntime.h = (
+	    ../../Documentation/Reference/STObjCRuntime.gsdoc
+	);
+	STObjectReference.h = (
+	    ../../Documentation/Reference/STObjectReference.gsdoc
+	);
+	STRemoteConversation.h = (
+	    ../../Documentation/Reference/STRemoteConversation.gsdoc
+	);
+	STScript.h = (
+	    ../../Documentation/Reference/STScript.gsdoc
+	);
+	STScriptObject.h = (
+	    ../../Documentation/Reference/STScriptObject.gsdoc
+	);
+	STScripting.h = (
+	    ../../Documentation/Reference/STScripting.gsdoc
+	);
+	STScriptsManager.h = (
+	    ../../Documentation/Reference/STScriptsManager.gsdoc
+	);
+	STSelector.h = (
+	    ../../Documentation/Reference/STSelector.gsdoc
+	);
+	STUndefinedObject.h = (
+	    ../../Documentation/Reference/STUndefinedObject.gsdoc
+	);
+    };
+    protocol = {
+	"(STConversation)" = STConversation;
+	"(STEnvironmentProcess)" = STRemoteConversation;
+	"(STMethod)" = STMethod;
+	"(STScriptObject)" = STScriptObject;
+	"(STScripting)" = STScripting;
+    };
+    source = {
+	"NSInvocation+additions.h" = (
+	    "NSInvocation+additions.m"
+	);
+	"NSObject+additions.h" = (
+	    "NSObject+additions.m"
+	);
+	STActor.h = (
+	    STActor.m
+	);
+	STBundleInfo.h = (
+	    STBundleInfo.m
+	);
+	STContext.h = (
+	    STContext.m
+	);
+	STConversation.h = (
+	    STConversation.m
+	);
+	STEngine.h = (
+	    STEngine.m
+	);
+	STEnvironment.h = (
+	    STEnvironment.m
+	);
+	STEnvironmentDescription.h = (
+	    STEnvironmentDescription.m
+	);
+	STExterns.h = (
+	    STExterns.m
+	);
+	STFileScript.h = (
+	    STFileScript.m
+	);
+	STFunctions.h = (
+	    STFunctions.m
+	);
+	STLanguageManager.h = (
+	    STLanguageManager.m
+	);
+	STMethod.h = (
+	    STMethod.m
+	);
+	STObjCRuntime.h = (
+	    STObjCRuntime.m
+	);
+	STObjectReference.h = (
+	    STObjectReference.m
+	);
+	STRemoteConversation.h = (
+	    STRemoteConversation.m
+	);
+	STScript.h = (
+	    STScript.m
+	);
+	STScriptObject.h = (
+	    STScriptObject.m
+	);
+	STScripting.h = (
+	    STScripting.m
+	);
+	STScriptsManager.h = (
+	    STScriptsManager.m
+	);
+	STSelector.h = (
+	    STSelector.m
+	);
+	STUndefinedObject.h = (
+	    STUndefinedObject.m
+	);
+    };
+    super = {
+	STActor = NSObject;
+	STBundleInfo = NSObject;
+	STContext = NSObject;
+	STConversation = NSObject;
+	STEngine = NSObject;
+	STEnvironment = STContext;
+	STEnvironmentDescription = NSObject;
+	STFileScript = STScript;
+	STLanguageManager = NSObject;
+	STObjectReference = NSObject;
+	STRemoteConversation = STConversation;
+	STScript = NSObject;
+	STScriptObject = NSObject;
+	STScriptsManager = NSObject;
+	STSelector = NSObject;
+	STUndefinedObject = NSObject;
+    };
+    title = {
+	"NSInvocation+additions" = "NSInvocation class additions";
+	"NSObject+additions" = "NSObject+additions documentation";
+	STActor = "STActor class documentation";
+	STBundleInfo = "STBundleInfo class documentation";
+	STContext = "STEnvironment class reference";
+	STConversation = "STConversation class documentation";
+	STEngine = "STEngine class documentation";
+	STEnvironment = "STEnvironment class reference";
+	STEnvironmentDescription = "STEnvironmentDescription class documentation";
+	STExterns = "STExterns documentation";
+	STFileScript = "STFileScript class documentation";
+	STFunctions = "STFunctions documentation";
+	STLanguageManager = "STLanguageManager class documentation";
+	STMethod = "STMethod documentation";
+	STObjCRuntime = "STObjCRuntime documentation";
+	STObjectReference = "STObjectReference class documentation";
+	STRemoteConversation = "STRemoteConversation class documentation";
+	STScript = "STScript class documentation";
+	STScriptObject = "STScriptObject class documentation";
+	STScripting = "STScripting protocol documentation";
+	STScriptsManager = "STScriptsManager class documentation";
+	STSelector = "STSelector class documentation";
+	STUndefinedObject = "STUndefinedObject class documentation";
+	StepTalk = "StepTalk Documentation";
+    };
+    unitmethods = {
+	"(STConversation)" = {
+	    "-interpretScript:" = STConversation;
+	    "-knownLanguages" = STConversation;
+	    "-language" = STConversation;
+	    "-result" = STConversation;
+	    "-resultByCopy" = STConversation;
+	    "-setLanguage:" = STConversation;
+	};
+	"(STEnvironmentProcess)" = {
+	    "-createConversation" = STRemoteConversation;
+	};
+	"(STMethod)" = {
+	    "-languageName" = STMethod;
+	    "-methodName" = STMethod;
+	    "-source" = STMethod;
+	};
+	"(STScriptObject)" = {
+	    "-instanceVariableNames" = STScriptObject;
+	};
+	"(STScripting)" = {
+	    "+classForScripting" = STScripting;
+	    "+className" = STScripting;
+	    "+isClass" = STScripting;
+	    "-classForScripting" = STScripting;
+	    "-className" = STScripting;
+	    "-isClass" = STScripting;
+	};
+	"NSBundle(STAdditions)" = {
+	    "+allFrameworkNames" = STBundleInfo;
+	    "+bundleForFrameworkWithName:" = STBundleInfo;
+	    "+pathForFrameworkWithName:" = STBundleInfo;
+	    "+stepTalkBundleNames" = STBundleInfo;
+	    "+stepTalkBundleWithName:" = STBundleInfo;
+	    "-scriptingInfoDictionary" = STBundleInfo;
+	};
+	"NSInvocation(STAdditions)" = {
+	    "+invocationWithTarget:selector:" = "NSInvocation+additions";
+	    "+invocationWithTarget:selectorName:" = "NSInvocation+additions";
+	    "-getArgumentAsObjectAtIndex:" = "NSInvocation+additions";
+	    "-returnValueAsObject" = "NSInvocation+additions";
+	    "-setArgumentAsObject:atIndex:" = "NSInvocation+additions";
+	};
+	"NSObject(STAdditions)" = {
+	    "-isNil" = "NSObject+additions";
+	    "-isSame:" = "NSObject+additions";
+	    "-notNil" = "NSObject+additions";
+	};
+	STActor = {
+	    "+actorInEnvironment:" = STActor;
+	    "-addMethod:" = STActor;
+	    "-environment" = STActor;
+	    "-initWithEnvironment:" = STActor;
+	    "-methodDictionary" = STActor;
+	    "-methodNames" = STActor;
+	    "-methodWithName:" = STActor;
+	    "-removeMethod:" = STActor;
+	    "-removeMethodWithName:" = STActor;
+	    "-setEnvironment:" = STActor;
+	};
+	STBundleInfo = {
+	    "+infoForBundle:" = STBundleInfo;
+	    "-allClassNames" = STBundleInfo;
+	    "-initWithBundle:" = STBundleInfo;
+	    "-namedObjects" = STBundleInfo;
+	    "-objectReferenceDictionary" = STBundleInfo;
+	    "-publicClassNames" = STBundleInfo;
+	};
+	STContext = {
+	    "-addNamedObjectsFromDictionary:" = STContext;
+	    "-createsUnknownObjects" = STContext;
+	    "-fullScriptingEnabled" = STContext;
+	    "-knownObjectNames" = STContext;
+	    "-objectDictionary" = STContext;
+	    "-objectReferenceForObjectWithName:" = STContext;
+	    "-objectWithName:" = STContext;
+	    "-parentContext" = STContext;
+	    "-removeObjectWithName:" = STContext;
+	    "-setCreatesUnknownObjects:" = STContext;
+	    "-setFullScriptingEnabled:" = STContext;
+	    "-setObject:forName:" = STContext;
+	    "-setParentContext:" = STContext;
+	};
+	STConversation = {
+	    "-context" = STConversation;
+	    "-initWithContext:language:" = STConversation;
+	    "-language" = STConversation;
+	    "-runScriptFromString:" = STConversation;
+	    "-setLanguage:" = STConversation;
+	};
+	STEngine = {
+	    "+engineForLanguage:" = STEngine;
+	    "-executeMethod:forReceiver:withArguments:inContext:" = STEngine;
+	    "-interpretScript:inContext:" = STEngine;
+	    "-methodFromSource:forReceiver:inContext:" = STEngine;
+	    "-understandsCode:" = STEngine;
+	};
+	STEnvironment = {
+	    "+environmentWithDefaultDescription" = STEnvironment;
+	    "+environmentWithDescription:" = STEnvironment;
+	    "+sharedEnvironment" = STEnvironment;
+	    "-addClassesWithNames:" = STEnvironment;
+	    "-includeBundle:" = STEnvironment;
+	    "-includeFramework:" = STEnvironment;
+	    "-initWithDefaultDescription" = STEnvironment;
+	    "-initWithDescription:" = STEnvironment;
+	    "-loadModule:" = STEnvironment;
+	    "-registerObjectFinder:name:" = STEnvironment;
+	    "-registerObjectFinderNamed:" = STEnvironment;
+	    "-removeObjectFinderWithName:" = STEnvironment;
+	    "-translateSelector:forReceiver:" = STEnvironment;
+	};
+	STEnvironmentDescription = {
+	    "+defaultDescriptionName" = STEnvironmentDescription;
+	    "+descriptionFromDictionary:" = STEnvironmentDescription;
+	    "+descriptionWithName:" = STEnvironmentDescription;
+	    "-classes" = STEnvironmentDescription;
+	    "-frameworks" = STEnvironmentDescription;
+	    "-initFromDictionary:" = STEnvironmentDescription;
+	    "-initWithName:" = STEnvironmentDescription;
+	    "-modules" = STEnvironmentDescription;
+	    "-objectFinders" = STEnvironmentDescription;
+	    "-updateClassWithName:description:" = STEnvironmentDescription;
+	    "-updateFromDictionary:" = STEnvironmentDescription;
+	};
+	STFileScript = {
+	    "+scriptWithFile:" = STFileScript;
+	    "-compareByLocalizedName:" = STFileScript;
+	    "-fileName" = STFileScript;
+	    "-initWithFile:" = STFileScript;
+	    "-localizedName" = STFileScript;
+	    "-scriptDescription" = STFileScript;
+	    "-scriptName" = STFileScript;
+	};
+	STLanguageManager = {
+	    "+defaultManager" = STLanguageManager;
+	    "-availableLanguages" = STLanguageManager;
+	    "-bundleForLanguage:" = STLanguageManager;
+	    "-createEngineForLanguage:" = STLanguageManager;
+	    "-defaultLanguage" = STLanguageManager;
+	    "-engineClassForLanguage:" = STLanguageManager;
+	};
+	STObjectReference = {
+	    "-identifier" = STObjectReference;
+	    "-initWithIdentifier:target:" = STObjectReference;
+	    "-object" = STObjectReference;
+	    "-setObject:" = STObjectReference;
+	    "-target" = STObjectReference;
+	};
+	STRemoteConversation = {
+	    "-close" = STRemoteConversation;
+	    "-initWithEnvironmentName:host:language:" = STRemoteConversation;
+	    "-open" = STRemoteConversation;
+	};
+	STScript = {
+	    "+scriptWithSource:language:" = STScript;
+	    "-initWithSource:language:" = STScript;
+	    "-language" = STScript;
+	    "-setLanguage:" = STScript;
+	    "-setSource:" = STScript;
+	    "-source" = STScript;
+	};
+	STScriptObject = {
+	    "+scriptObject" = STScriptObject;
+	    "-addMethod:" = STScriptObject;
+	    "-environment" = STScriptObject;
+	    "-initWithInstanceVariableNames:" = STScriptObject;
+	    "-instanceVariableNames" = STScriptObject;
+	    "-methodDictionary" = STScriptObject;
+	    "-methodNames" = STScriptObject;
+	    "-methodWithName:" = STScriptObject;
+	    "-objectForVariable:" = STScriptObject;
+	    "-removeMethod:" = STScriptObject;
+	    "-removeMethodWithName:" = STScriptObject;
+	    "-setEnvironment:" = STScriptObject;
+	    "-setObject:forVariable:" = STScriptObject;
+	};
+	STScriptsManager = {
+	    "+defaultManager" = STScriptsManager;
+	    "-allScripts" = STScriptsManager;
+	    "-initWithDomainName:" = STScriptsManager;
+	    "-scriptSearchPaths" = STScriptsManager;
+	    "-scriptWithName:" = STScriptsManager;
+	    "-scriptsDomainName" = STScriptsManager;
+	    "-setScriptSearchPaths:" = STScriptsManager;
+	    "-setScriptSearchPathsToDefaults" = STScriptsManager;
+	    "-validScriptSearchPaths" = STScriptsManager;
+	};
+	STSelector = {
+	    "-initWithName:" = STSelector;
+	    "-initWithSelector:" = STSelector;
+	    "-selectorName" = STSelector;
+	    "-selectorValue" = STSelector;
+	};
+    };
+    variable = {
+	STGenericException = STExterns;
+	STInternalInconsistencyException = STExterns;
+	STInvalidArgumentException = STExterns;
+	STLanguageBundleExtension = STExterns;
+	STLanguageBundlesDirectory = STExterns;
+	STLanguagesConfigFile = STExterns;
+	STLibraryDirectory = STExterns;
+	STMallocZone = STExterns;
+	STModuleExtension = STExterns;
+	STModulesDirectory = STExterns;
+	STNil = STExterns;
+	STScriptExtension = STExterns;
+	STScriptingEnvironmentExtension = STExterns;
+	STScriptingEnvironmentsDirectory = STExterns;
+	STScriptingException = STExterns;
+	STScriptsDirectory = STExterns;
+    };
+}

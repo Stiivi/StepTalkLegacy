@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STActor" up="StepTalk">
+  <head>
+    <title>STActor class documentation</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2002 Free Software Foundation</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the STActor class
+      </heading>
+      <class name="STActor" super="NSObject">
+        <declared>StepTalk/STActor.h</declared>
+        <conform>NSCoding</conform>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <ivariable type="STEnvironment*" name="environment" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSMutableDictionary*" name="ivars" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSMutableDictionary*" name="methodDictionary" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <method type="id" factory="yes">
+          <sel>actorInEnvironment:</sel>
+          <arg type="STEnvironment*">env</arg>
+          <desc>
+            Return new instance of script object without any
+            instance variables
+          </desc>
+        </method>
+        <method type="void">
+          <sel>addMethod:</sel>
+          <arg type="id&lt;STMethod&gt;">aMethod</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="STEnvironment*">
+          <sel>environment</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>initWithEnvironment:</sel>
+          <arg type="STEnvironment*">env</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSDictionary*">
+          <sel>methodDictionary</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSArray*">
+          <sel>methodNames</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id&lt;STMethod&gt;">
+          <sel>methodWithName:</sel>
+          <arg type="NSString*">aName</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>removeMethod:</sel>
+          <arg type="id&lt;STMethod&gt;">aMethod</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>removeMethodWithName:</sel>
+          <arg type="NSString*">aName</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setEnvironment:</sel>
+          <arg type="STEnvironment*">env</arg>
+          <desc>
+            Set object's environment. Note: This method should be
+            replaced by some other, more clever mechanism.
+          </desc>
+        </method>
+      </class>
+    </chapter>
+  </body>
+</gsdoc>

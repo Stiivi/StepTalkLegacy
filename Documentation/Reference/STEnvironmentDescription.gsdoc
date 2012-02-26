@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STEnvironmentDescription" up="StepTalk">
+  <head>
+    <title>STEnvironmentDescription class documentation</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2002 Free Software Foundation</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the
+        STEnvironmentDescription class
+      </heading>
+      <class name="STEnvironmentDescription" super="NSObject">
+        <declared>StepTalk/STEnvironmentDescription.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <ivariable type="NSMutableDictionary*" name="aliases" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSMutableDictionary*" name="behaviours" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSMutableDictionary*" name="classes" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSMutableArray*" name="finders" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSMutableArray*" name="frameworks" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSMutableArray*" name="modules" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="int" name="restriction" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSMutableArray*" name="usedDefs" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <method type="NSString*" factory="yes">
+          <sel>defaultDescriptionName</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id" factory="yes">
+          <sel>descriptionFromDictionary:</sel>
+          <arg type="NSDictionary*">dictionary</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id" factory="yes">
+          <sel>descriptionWithName:</sel>
+          <arg type="NSString*">descriptionName</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSMutableDictionary*">
+          <sel>classes</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSArray*">
+          <sel>frameworks</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>initFromDictionary:</sel>
+          <arg type="NSDictionary*">def</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>initWithName:</sel>
+          <arg type="NSString*">defName</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSArray*">
+          <sel>modules</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSArray*">
+          <sel>objectFinders</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>updateClassWithName:</sel>
+          <arg type="NSString*">className</arg>
+          <sel>description:</sel>
+          <arg type="NSDictionary*">def</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>updateFromDictionary:</sel>
+          <arg type="NSDictionary*">def</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </class>
+    </chapter>
+  </body>
+</gsdoc>

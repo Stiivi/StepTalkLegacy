@@ -1,0 +1,14 @@
+1   Add 'New in environment...' which will open "New panel" where user will
+    be able to select scripting environment.
+2   Add environment browser (named objects, loaded frameworks and bundles)
+2.1 Implement 'Load bundle'
+2.2 Implement 'Load framework'
+2.3 Implement deletion of objects
+3   Add menu item 'Script->Inspect selection' and add object inspector,
+    like the one in Smalltalk
+3.1 Object inspector (use class description)
+3.2 Array inspector (delete functions for mutable arrays)
+3.3 Dictionary inspector
+3.4 Ability to save objects (use NSArchiver)
+4   Implement document saving (warn the user, that all created objects will
+    be lost)

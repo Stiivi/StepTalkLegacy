@@ -1,0 +1,11 @@
+# This file is included in various Makefile's to get version information.
+# Compatible with Bourne shell syntax, so it can included there too.
+
+# The version number of this release.
+MAJOR_VERSION=0
+MINOR_VERSION=2
+SUBMINOR_VERSION=0
+
+APPTALK_VERSION=${MAJOR_VERSION}.${MINOR_VERSION}.${SUBMINOR_VERSION}
+
+VERSION=${APPTALK_VERSION}

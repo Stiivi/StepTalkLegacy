@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STFileScript" up="StepTalk">
+  <head>
+    <title>STFileScript class documentation</title>
+    <author name="Stefan Urbanek">
+      <email address="stefanurbanek@yahoo.fr">
+        stefanurbanek@yahoo.fr
+      </email>
+    </author>
+    <copy>2002 Stefan Urbanek</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the STFileScript class
+      </heading>
+      <class name="STFileScript" super="STScript">
+        <declared>StepTalk/STFileScript.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <ivariable type="NSString*" name="description" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSString*" name="fileName" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSString*" name="localizedName" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSString*" name="menuKey" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <method type="id" factory="yes">
+          <sel>scriptWithFile:</sel>
+          <arg type="NSString*">file</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSComparisonResult">
+          <sel>compareByLocalizedName:</sel>
+          <arg type="STFileScript*">aScript</arg>
+          <desc>
+            Compare scripts by localized name.
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>fileName</sel>
+          <desc>
+            Return file name of the receiver.
+          </desc>
+        </method>
+        <method type="id">
+          <sel>initWithFile:</sel>
+          <arg type="NSString*">aFile</arg>
+          <desc>
+            Create a new script from file <var>aFile></var>.
+            Script information will be read from 'aFile.stinfo'
+            file containing a dictionary property list.
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>localizedName</sel>
+          <desc>
+            Returns localized name of the receiver script.
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>scriptDescription</sel>
+          <desc>
+            Returns localized description of the script.
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>scriptName</sel>
+          <desc>
+            Returns a script name by which the script is
+            identified
+          </desc>
+        </method>
+      </class>
+    </chapter>
+  </body>
+</gsdoc>

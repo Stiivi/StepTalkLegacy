@@ -1,0 +1,141 @@
+/** Foundation-operators.stenv
+ */
+
+{
+    Name = "Foundation-operators";
+    Use = (SymbolicSelectors);
+    
+    DefaultRestriction = AllowAll;
+
+    Behaviours =
+    {
+        "NSObject-operators" = {
+            Use = (Comparison, KeyValueCoding);
+        };
+    };
+    
+    Classes = 
+    {
+        All = {
+            
+        };
+     
+        // added by mateu
+        "NSObject class" = {
+            SymbolicSelectors = {
+                "="  = "isEqual:";
+                "==" = "isSame:";
+                "~=" = "notEqual:";
+                "~~" = "notSame:";
+            };
+        };
+
+        NSObject = {
+            Use = ("NSObject-operators");
+        };
+        
+        NSProxy = {
+            Use = (KeyValueCoding);
+        };
+
+        NSArray = {
+            Super = "NSObject";
+            SymbolicSelectors = {
+                "@" = "objectAtIndex:";
+                "," = "arrayByAddingObject:";
+                "+" = "arrayByAddingObject:";
+            };
+        };
+
+        NSMutableArray = {
+            Super = "NSArray";
+            SymbolicSelectors =
+            {
+                "+=" = "addObject:";
+                "-=" = "removeObject:";
+            };
+        };
+
+        NSDictionary =
+        {
+            Super = NSObject;
+            SymbolicSelectors = {
+                "@" = "objectForKey:";
+            };
+        };
+
+        NSUserDefaults =
+        {
+            Super = NSObject;
+            SymbolicSelectors = {
+                "@" = "objectForKey:";
+            };
+        };
+
+        NSString =
+        {
+            Super = NSObject;
+            SymbolicSelectors = 
+            {
+                "," = "stringByAppendingString:";
+                "/" = "stringByAppendingPathComponent:";
+                "@" = "characterAtIndex:";
+            };
+            Aliases =
+            {
+                size = length;
+            };
+        };
+
+        NSMutableString =
+        {
+            Super = NSString;
+            SymbolicSelectors = 
+            {
+                "+=" = "appendString:";
+            };
+        };
+        
+        NSSet = 
+        {
+            Super = NSObject;
+            SymbolicSelectors = 
+            {
+                "<" = "isSubsetOfSet:";
+            };
+        
+        };
+        NSMutableSet =
+        {
+            Super = NSSet;
+            SymbolicSelectors = 
+            {
+                "+=" = "addObject:";
+                "-=" = "removeObject:";
+            };
+        };
+
+        NSDate = 
+        {
+            Super = NSObject;
+            SymbolicSelectors = 
+            {
+                "-" = "timeIntervalSinceDate:";
+            };
+        
+        };
+
+        NSNumber = 
+        {
+            Super = NSValue;
+            Use = (NumberArithmetic);
+
+            SymbolicSelectors = 
+            {
+                "<>" = "rangeWith:";
+                "@" = "pointWith:";
+                "@@" = "sizeWith:";
+            };
+        };
+    }; /* Classes */
+}

@@ -1,0 +1,49 @@
+Application Scripting bundle
+----------------------------
+Ahthor: Stefan Urbanek  <urbanek@host.sk>
+
+NOTE: this bundle wants another name and cleanup. 
+
+
+What is Application Scripting Bundle ?
+--------------------------------------
+
+Bundle that allows users to 'script' applications. In other words, for example,
+users can:
+
+- extend the behaviour of application by adding their own functionality
+- automate tasks in the application
+- create a batch task
+
+How to make applications scriptable is described in StepTalk/Documentation. It
+can be done very easily in less than five minutes.
+
+
+Where to get it?
+----------------
+
+Application Scripting Bundle is part of the StepTalk and you can download
+it from:
+
+    http://steptalk.host.sk/download.html
+
+
+Installation
+------------
+Application Scripting Bundle is automatically installed with StepTalk. You can
+install it separately by doing:
+
+    > make
+    > make install
+
+    
+Scripts
+-------
+Scripts are stored per application domain in 
+*/Library/StepTalk/Scripts/application_name. For example GNUmail is searhing
+for scripts in */Library/StepTalk/Scripts/GNUmail.
+
+
+Feedback
+--------
+Any bug reports and comments are welcome at urbanek@host.sk

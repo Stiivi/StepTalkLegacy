@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STEngine" up="StepTalk">
+  <head>
+    <title>STEngine class documentation</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2002 Free Software Foundation</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the STEngine class
+      </heading>
+      <class name="STEngine" super="NSObject">
+        <declared>StepTalk/STEngine.h</declared>
+        <desc>
+          STEngine is abstract class for language engines used
+          to intepret scripts.
+        </desc>
+        <method type="STEngine*" factory="yes">
+          <sel>engineForLanguage:</sel>
+          <arg type="NSString*">name</arg>
+          <desc>
+            Instance creation <br /> Return a scripting engine
+            for language with specified <var>name</var>. The engine
+            is get from default language manager.
+          </desc>
+        </method>
+        <method type="id">
+          <sel>executeMethod:</sel>
+          <arg type="id&lt;STMethod&gt;">aMethod</arg>
+          <sel>forReceiver:</sel>
+          <arg type="id">anObject</arg>
+          <sel>withArguments:</sel>
+          <arg type="NSArray*">args</arg>
+          <sel>inContext:</sel>
+          <arg type="STContext*">env</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id" override="subclass">
+          <sel>interpretScript:</sel>
+          <arg type="NSString*">script</arg>
+          <sel>inContext:</sel>
+          <arg type="STContext*">context</arg>
+          <desc>
+            Interpret source code <var>code</var> in a
+            <var>context</var> <var>context</var>. This is the
+            method, that has to be implemented by those who are
+            writing a language engine.
+          </desc>
+        </method>
+        <method type="STMethod*">
+          <sel>methodFromSource:</sel>
+          <arg type="NSString*">sourceString</arg>
+          <sel>forReceiver:</sel>
+          <arg type="id">receiver</arg>
+          <sel>inContext:</sel>
+          <arg type="STContext*">env</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>understandsCode:</sel>
+          <arg type="NSString*">code</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </class>
+    </chapter>
+  </body>
+</gsdoc>

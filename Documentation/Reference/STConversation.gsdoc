@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STConversation" up="StepTalk">
+  <head>
+    <title>STConversation class documentation</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2002 Free Software Foundation</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the STConversation class
+      </heading>
+      <class name="STConversation" super="NSObject">
+        <declared>StepTalk/STConversation.h</declared>
+        <conform>STConversation</conform>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <ivariable type="STContext*" name="context" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="STEngine*" name="engine" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="NSString*" name="languageName" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="id" name="returnValue" validity="protected">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <method type="STContext*">
+          <sel>context</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>initWithContext:</sel>
+          <arg type="STContext*">aContext</arg>
+          <sel>language:</sel>
+          <arg type="NSString*">aLanguage</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>language</sel>
+          <desc>
+            Return name of the language used in the receiver
+            conversation
+          </desc>
+        </method>
+        <method type="id">
+          <sel>runScriptFromString:</sel>
+          <arg type="NSString*">aString</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setLanguage:</sel>
+          <arg type="NSString*">newLanguage</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </class>
+    </chapter>
+    <chapter>
+      <heading>
+        Software documentation for the STConversation protocol
+      </heading>
+      <protocol name="STConversation">
+        <declared>StepTalk/STConversation.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <method type="void">
+          <sel>interpretScript:</sel>
+          <arg type="bycopy NSString*">aString</arg>
+          <desc>
+            Interpret given string as a script in the
+            receiver environment.
+          </desc>
+        </method>
+        <method type="bycopy NSArray*">
+          <sel>knownLanguages</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>language</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>result</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="bycopy id">
+          <sel>resultByCopy</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setLanguage:</sel>
+          <arg type="NSString*">newLanguage</arg>
+          <desc>
+            Set language for the receiver.
+          </desc>
+        </method>
+      </protocol>
+    </chapter>
+  </body>
+</gsdoc>

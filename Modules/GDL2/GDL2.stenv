@@ -1,0 +1,16 @@
+/** GDL2.stenv 
+
+    To use:
+       > stexec -env GDL2 script_name
+    or
+       > stshell -env GDL2
+*/
+
+{
+    Name = "GDL2";
+
+    /* Finders = (DistributedFinder); */
+    Modules = (GDL2, ObjectiveC);
+    
+    Use = ("Standard");
+}

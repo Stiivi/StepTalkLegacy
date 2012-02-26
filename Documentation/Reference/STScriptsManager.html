@@ -1,0 +1,160 @@
+<html>
+
+    <head>
+    <title>STScriptsManager class documentation</title>
+  </head>
+  <body>
+    <font face="serif">
+    <a href="StepTalk.html">Up</a>
+    <br />
+    <h1><a name="title$STScriptsManager">STScriptsManager class documentation</a></h1>
+    <h3>Authors</h3>
+    <dl>
+      <dt>Stefan Urbanek</dt>
+      <dd>
+      </dd>
+    </dl>
+    <p><b>Copyright:</b> (C) 2002 Stefan Urbanek</p>
+
+        <div>
+    </div>
+
+          <h1><a name="001000000000">
+        Software documentation for the STScriptsManager class
+      </a></h1>
+    <h2><a name="class$STScriptsManager">STScriptsManager</a> : NSObject</h2>
+    <blockquote>
+      <dl>
+        <dt><b>Declared in:</b></dt>
+        <dd>StepTalk/STScriptsManager.h</dd>
+      </dl>
+    </blockquote>
+    <p>
+      
+          <em>Description forthcoming.</em>
+        
+    </p>
+    <hr width="50%" align="left" />
+    <a href="#_STScriptsManager_ivars">Instance Variables</a>
+    <br/><br/>
+    <b>Method summary</b>
+    <ul>
+      <li><a rel="gsdoc" href="STScriptsManager.html#method$STScriptsManager+defaultManager">+defaultManager</a></li>
+      <li><a rel="gsdoc" href="STScriptsManager.html#method$STScriptsManager-allScripts">-allScripts</a></li>
+      <li><a rel="gsdoc" href="STScriptsManager.html#method$STScriptsManager-initWithDomainName:">-initWithDomainName:</a></li>
+      <li><a rel="gsdoc" href="STScriptsManager.html#method$STScriptsManager-scriptSearchPaths">-scriptSearchPaths</a></li>
+      <li><a rel="gsdoc" href="STScriptsManager.html#method$STScriptsManager-scriptWithName:">-scriptWithName:</a></li>
+      <li><a rel="gsdoc" href="STScriptsManager.html#method$STScriptsManager-scriptsDomainName">-scriptsDomainName</a></li>
+      <li><a rel="gsdoc" href="STScriptsManager.html#method$STScriptsManager-setScriptSearchPaths:">-setScriptSearchPaths:</a></li>
+      <li><a rel="gsdoc" href="STScriptsManager.html#method$STScriptsManager-setScriptSearchPathsToDefaults">-setScriptSearchPathsToDefaults</a></li>
+      <li><a rel="gsdoc" href="STScriptsManager.html#method$STScriptsManager-validScriptSearchPaths">-validScriptSearchPaths</a></li>
+    </ul>
+    <hr width="50%" align="left" />
+    <h3><a name="method$STScriptsManager+defaultManager">defaultManager&nbsp;</a></h3>
+    + (id) <b>defaultManager</b>;<br />
+    <p>
+      
+            Returns default scripts manager for current process
+            (application or tool).
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STScriptsManager-allScripts">allScripts&nbsp;</a></h3>
+    - (NSArray*) <b>allScripts</b>;<br />
+    <p>
+      
+            Return list of all scripts for managed domain.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STScriptsManager-initWithDomainName:">initWithDomainName:&nbsp;</a></h3>
+    - (id) <b>initWithDomainName:</b> (NSString*)name;<br />
+This is a designated initialiser for the class.<br />
+    <p>
+      
+            Initializes the receiver to be used with domain
+            named <var>name</var>. If <var>name</var> is
+            <code>nil</code>, default scripts domain
+            <var>name</var> will be used.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STScriptsManager-scriptSearchPaths">scriptSearchPaths&nbsp;</a></h3>
+    - (NSArray*) <b>scriptSearchPaths</b>;<br />
+    <p>
+      
+            Retrun an array of script search paths. Scripts are
+            searched in Library/StepTalk/Scripts/
+            <var>scriptsDomainName</var>,
+            Library/StepTalk/Scripts/Shared
+            and in all loaded bundles in <var>bundlePath</var>
+            /Resources/Scripts.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STScriptsManager-scriptWithName:">scriptWithName:&nbsp;</a></h3>
+    - (<a rel="gsdoc" href="STFileScript.html#class$STFileScript">STFileScript</a>*) <b>scriptWithName:</b> (NSString*)aString;<br />
+    <p>
+      
+            Get a script with name <var>aString</var> for current
+            scripting domain.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STScriptsManager-scriptsDomainName">scriptsDomainName&nbsp;</a></h3>
+    - (NSString*) <b>scriptsDomainName</b>;<br />
+    <p>
+      
+            Return name of script manager domain.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STScriptsManager-setScriptSearchPaths:">setScriptSearchPaths:&nbsp;</a></h3>
+    - (void) <b>setScriptSearchPaths:</b> (NSArray*)anArray;<br />
+    <p>
+      
+            Set script search paths to <var>anArray</var>.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STScriptsManager-setScriptSearchPathsToDefaults">setScriptSearchPathsToDefaults&nbsp;</a></h3>
+    - (void) <b>setScriptSearchPathsToDefaults</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$STScriptsManager-validScriptSearchPaths">validScriptSearchPaths&nbsp;</a></h3>
+    - (NSArray*) <b>validScriptSearchPaths</b>;<br />
+    <p>
+      
+            Return script search paths that are valid. That
+            means that path exists and is a directory.
+          
+    </p>
+    <hr width="25%" align="left" />
+<a name="_STScriptsManager_ivars"/>    <br/><hr width="50%" align="left" />
+    <h2>Instance Variables for STScriptsManager Class</h2>
+    <h3><a name="ivariable$STScriptsManager*scriptSearchPaths">scriptSearchPaths</a></h3>
+    @protected NSArray* <b>scriptSearchPaths</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="ivariable$STScriptsManager*scriptsDomainName">scriptsDomainName</a></h3>
+    @protected NSString* <b>scriptsDomainName</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <br/><hr width="50%" align="left" /><br/>
+    <br />
+    <a href="StepTalk.html">Up</a>
+    </font>
+</body>
+</html>

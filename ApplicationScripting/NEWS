@@ -1,0 +1,11 @@
+0.2.0
+    
+    * Bundles loaded by the application now can provide additional scripts and
+      additional scripting capabilities (new scriptable objects)
+    * Application is looking for scripting information and scripts in all
+      loaded bundles. 
+    
+    Documentation:
+    * Scripts.txt: updated information about scrip search locations
+    * ApplicationScripting.txt: updated information about optional scripting 
+    using bundle

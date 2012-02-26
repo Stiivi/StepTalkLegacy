@@ -1,0 +1,50 @@
+/** SymbolicSelectors.stenv 
+ *  Mappings for some symbolic selectors
+ * 
+ *  Copyright (c) 2000 Stefan Urbanek
+ * 
+ *  This file is part of the StepTalk project.
+ *
+ */
+
+{
+    Name = "SymbolicSelectors";
+
+    Behaviours =
+    {
+        Comparison = {
+            SymbolicSelectors = 
+            {
+                "="  = "isEqual:";
+                "==" = "isSame:";
+                "~=" = "notEqual:";
+                "~~" = "notSame:";
+
+                "<" = "isLessThan:";
+                ">" = "isGreatherThan:";
+                "<=" = "isLessOrEqualThan:";
+                ">=" = "isGreatherOrEqualThan:";
+                
+            };
+        };
+
+        NumberArithmetic =
+        {
+            SymbolicSelectors = 
+            {
+                "+" = "add:";
+                "-" = "subtract:";
+                "*" = "multiply:";
+                "/" = "divide:";
+            };
+        };
+        
+        KeyValueCoding =
+        {
+            SymbolicSelectors = 
+            {
+                "->" = "valueForKeyPath:";
+            };
+        };
+    };
+}

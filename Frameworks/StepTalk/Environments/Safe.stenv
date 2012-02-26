@@ -1,0 +1,67 @@
+/** Foundation-safe.stenv
+ */
+
+{
+    Name = "Foundation-safe";
+
+    Use = ("Standard");
+
+    Behaviours =
+    {
+        "DenyWriteToFile" = {
+            DenyMethods = (
+                "writeToFile:atomically:",
+                "writeToURL:atomically:"
+            )
+        };
+    };
+
+    Classes = 
+    {
+        NSString = 
+        {
+            Use = (DenyWriteToFile);
+        };
+        NSArray = 
+        {
+            Use = (DenyWriteToFile);
+        };
+        NSDictionary = 
+        {
+            Use = (DenyWriteToFile);
+        };
+        NSData = 
+        {
+            Use = (DenyWriteToFile);
+        };
+
+        NSFileManager =
+        {
+            DenyMethods = (
+                "copyPath:toPath:handler:",
+                "createFileAtPath:contents:attributes:",
+                "movePath:toPath:handler:",
+                "linkPath:toPath:handler:",
+                "removeFileAtPath:handler:",
+                "changeFileAttributes:atPath:",
+                "createSymbolicLinkAtPath:pathContent:"
+            );
+        };
+
+        NSUserDefaults =
+        {
+            DenyMethods = (
+                "removeObjectForKey:",
+                "setBool:forKey:",
+                "setFloat:forKey:",
+                "setInteger:forKey:",
+                "setObject:forKey:",
+                "removePersistentDomainForName:",
+                "setPersistentDomain:forName:",
+                "removeVolatileDomainForName:",
+                "setVolatileDomain:forName:",
+                "registerDefaults:"
+            );
+        };
+    }; /* Classes */
+}

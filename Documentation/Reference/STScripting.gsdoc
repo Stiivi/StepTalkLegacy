@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.2//EN" "http://www.gnustep.org/gsdoc-1_0_2.xml">
+<gsdoc base="STScripting" up="StepTalk">
+  <head>
+    <title>STScripting protocol documentation</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2002 Free Software Foundation</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the NSObject(STScripting)
+        category
+      </heading>
+      <category name="STScripting" class="NSObject">
+        <declared>StepTalk/STScripting.h</declared>
+        <conform>STScripting</conform>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+      </category>
+    </chapter>
+    <chapter>
+      <heading>
+        Software documentation for the STScripting protocol
+      </heading>
+      <protocol name="STScripting">
+        <declared>StepTalk/STScripting.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <method type="Class" factory="yes">
+          <sel>classForScripting</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSString*" factory="yes">
+          <sel>className</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="BOOL" factory="yes">
+          <sel>isClass</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="Class">
+          <sel>classForScripting</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>className</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>isClass</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </protocol>
+    </chapter>
+  </body>
+</gsdoc>

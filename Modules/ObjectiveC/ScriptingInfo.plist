@@ -1,0 +1,6 @@
+{
+    ScriptingInfoClass = ObjectiveCModule;
+    Classes = (
+        ObjectiveCRuntime
+    );
+}
