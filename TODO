@@ -1,0 +1,38 @@
+TODO list
+
+- find all defaults and document them
+- find all debug logs and document them
+- find all used .plist keys/values and document them (STLanguageManager,...)
+- optimalise method execution - each time language manager is fetched -can be expensive
+
+HIGH PRIORITY 
+
+- implement NSRect object
+- Rewrite Smalltalk compiler (grammar)
+
+        Remove STBytecodeInterpreter and use only STCompiler. How?
+        Simply convert language constructions into 'command' objects like
+        SmalltalkStatement, SmalltalkPrimary, SmalltalkMethodSend, ...
+        and implement executeInEnvironment:context:receiver:
+        
+- Update application scripting to use STConversation
+
+LOW PRIORITY
+
+UNDEFINED
+
+- handle 'connection did die' notification for distant objects in STEnvironment
+- fix class-info lookup for proxies in STEnvironment
+- Smalltalk: separate compiler and compilation context
+- create a 'Shell' scripting environment
+- Create ApplicationScripting framework, instead of bundle. It should offer
+   passive application scripting (without linking) and active app. scripting
+   (linking with the framewotk). Give it some reasonable name, becauase that one
+   is already used by Apple
+- Add framework list into environment description
+- Change Modules to Frameworks
+- Fill implementation of STScriptObject, STMethod and related STEngine methods
+- Remove empty directories (Source, Modules/StepTalk)
+- Replace STMethod languageName with map table of method class->engine class
+
+    

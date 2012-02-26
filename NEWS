@@ -1,0 +1,192 @@
+0.10.0
+
+    * introduced new language management (STLanguageManager)
+    * introduced remote scripting (STRemoteConversation)
+    * new tool for semi-persistent environments: stenvironment
+    * added reading from stdin to stexec
+    * added remote scripting to stshell and stexec
+    * new conversation methods
+    * removed tools: stalk, stupdate_languages
+    * removed depreciated methods from STEnvironment, removed class STLanguage
+    
+    Notes:
+    - you can delete */Library/StepTalk/Configuration directories
+
+0.9.1
+
+    * Actor class - STActor. For more information see attached example or
+    Examples/Smalltalk/stactor.st
+    * fixes after GNUstep-base fixes of NSUnknownKey
+
+0.9.0
+
+    * Changed "full scripting" behaviour. When enabled, all classes are
+    available for scripting, not only those published by frameworks.
+    * There was done design fix in the Smalltalk language bundle. Instance
+    variables of script objects were accessed by index, now they are
+    referenced by names. This allows further creation of STActor
+    (STScriptObject successor) object that is composed of script methods and
+    ivars. Also it would be possible to create script methods for any objc
+    receiver. Ivar access is done through KVC. For more information do not
+    hesitate to ask.
+
+0.8.2
+
+    * Fixed and changed license to LGPL
+    * Several fixes from Mateu Batle for the framework and Smalltalk bundle
+    * Fixed bug with signed/unsigned bytecode in the Smalltalk bundle
+
+0.8.1
+
+    * Added ReadlineTranscript
+    * Renamed, added and deprecated some STEnvironment methods. Methods were
+    not removed, NSLog warnings were added.
+
+    * Added STConversation object. Basically, it's a conversation with 
+    objects in an environment using a scripting language. The reason
+    for creating this clas was to open a path for easier remote scripting
+    where you can 'talk in a conversation' with a remote DO server or
+    application. However, this remote part is just going to be implemented.
+
+
+0.8.0
+
+    NOTE: You HAVE to remove your previous installation of StepTalk to be
+    able to install new one. (especially Local/Library/Headers/StepTalk).
+
+    Major changes:
+    * Changed StepTalk from library to a framework
+    * Added script objects.
+
+    Other:
+    * StepTalk module was removed, because it was no longer required.
+    * Added framework loading support in environment description files (.stenv)
+
+    * Added some autogsdoc generated documentation
+    * Implemented Framework support and new Environment method: includeFramework:
+    * Created a workaround for gnustep-base Distributed Objects bug. Now
+    DO shold work correctly.
+    * Some smalltalk parser fixes.
+
+0.7.1
+
+    * Prepared StepTalk for application scripting support
+    * Added application scripting support bundle
+    * Added documentation for application scripting
+    * Many source cleanups by David Ayers  <d.ayers@inode.at>
+    * Some bugfixes in Smalltalk source reader
+
+    For more information about scripting bundle see ApplicationScripting
+    directory.
+
+0.7.0
+
+    * Added ability to use any bundle or framework for scripting 
+    * Moved scripting information from bundle info dictionary into separate
+    file.
+    * Replaced .stmodules with plain bundles.
+    * Removed STModule class
+    * Added conditional GDL2 module installation.
+    * Small improvements and bug-fixes.
+
+    IMPORTANT NOTE: You have to rebuild and reinstall all modules, because the
+    bundle format has changed.
+
+0.6.2
+
+    * Smalltalk: Added parsing of real numbers
+    * ObjectiveC: added two new methods into the Runtime object:
+        selectorsContainingString: 
+            returns an array of selectors that contain specified string
+        implementorsOfSelector:
+            returns an array of all classes that implement specified selector
+            
+    * Created an empty language bundle MyLanguage as an example
+    * Added GDL2 module
+    * Fixed installation: removed forced installation to the user's home 
+    directory
+
+
+    NOTE: Please delete all standard StepTalk language bundles, modules and
+    finders from your home directory if it is not your default installation
+    directory so new bundles can be found.
+
+0.6.1
+
+    * Code cleanup
+    * New modules: ObjectiveC and StepTalk
+    * New classes: STScript and STScriptManager
+
+0.6.0
+
+    * Created 'Object Finders'
+        Distributed Object Finder 
+        Application Finder
+    * New example tool stshell - the StepTalk shell
+    * Automated loading of modules and finders using scripting environment 
+      descriptions
+    * StepTalk defaults changed
+    * Some source documentation added
+    * Bugfixes in Smalltalk language
+    
+0.5.2
+
+    * Separated AppTalk
+    * Added option to make "appkit=no" to disable making of AppKit stuff.
+    
+0.5.1
+
+    * Added AppTalk application scripting library
+    * Smalltalk syntax changed. See Documentation/Smalltalk section Source. 
+    * Fixed AppKit constants
+    * Make it build with latest GNUstep release
+    * Various bugfixes
+
+0.5.0
+  
+    * support for NSRange, NSPoint and NSSize (see example range.st)
+    * Implemented SEL type handling (see examples selector.st and 
+      notification.st)
+    * New example pldes.st - pldes tool written in smalltalk
+
+    Smalltalk: 
+    * Small (10-15%)speed improvements of block evaluation
+    * Handle 'exit' method in script object. 'self exit' will terminate script 
+      execution.
+    * Documentation describing smalltalk features (exception handling,
+      symbolic selector and iterators)
+
+0.4.1
+
+    * Guile - new language bundle. gstep-guile library is needed.
+
+      Guile bundle is not build by default. You have to make it in 
+      Languages/Guile directory (make; make install). You may try to execute
+      very simple piece of code in Languages/Guile/Tests using stexec. 
+      
+      NOTE: do not forget to run 'stupdate_languages' after installing any new
+            language bundle. To find out if languages were updated, try 
+            'stexec -list-languages'
+
+    * Separated Foundation binding stuff to Foundation module
+    
+0.4.0
+
+    * AppKit - new module
+    * AppKit examples
+            openPanel - shows NSOpenPanel
+            rtf2text - converts RTF document to plain text 
+    * Added execution of script with more methods
+    * Tools will now try to get language type from file extension
+    * Added new tool stupdate_languages to create file extensions dictionary
+
+0.3.0
+for more details see ChangeLog file
+    
+    * Added few examples to show how scripting works. See Examples directory 
+      in source package. 
+    * Added tool 'stalk' to talk to named servers. 
+    * Added new tool options. 
+    * Some known bugs were fixed.
+    * Little bit of documentation added (see Documentation directory)
+    * STEnvironment interface changed

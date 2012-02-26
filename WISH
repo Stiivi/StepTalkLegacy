@@ -1,0 +1,104 @@
+Dear all, users and developers...
+
+This text describes my intentions and wishes for StepTalk.
+
+    Author: Stefan Urbanek
+
+    E-Mail: google the name for contact
+    Home  : http://stefan.agentfarms.net
+
+Content:
+  
+    What is the goal of StepTalk?
+    Language and Interaction
+    The Framework
+
+What is the goal of StepTalk?
+-----------------------------
+
+    StepTalk was meant to be an 'distributed object glue' or 'application
+    glue'. The primary intention was to create a framework that will allow
+    users to join functionalities of different applications (or distributed
+    objects) to complete desired tasks. It should allow users to 'talk' to
+    their applications with some language that is understandable to both - to
+    the user and to the application.
+
+    Another intention was to allow users to extend applications with
+    functionality they miss, or want to automatize, or want to do in a batch.
+
+    StepTalk is a framework that wants to fill the gap between application
+    author and users with their needs. It wants to provide a feel of single
+    common object universe.
+
+
+Language and Interaction
+------------------------
+
+    StepTalk is rather language abstraction than a (scripting) language. The
+    idea of abstraction is, that users and developers are dealing with an
+    universe of interacting objects. It is based on two basic principles:
+
+      1. Every thing is an object
+      2. Objects are communicating by sending messages
+
+    "Objects are 'nouns' and messages are 'verbs' of a language. ", to add a 
+    famous quote.
+
+    Nouns in a (scripting) language are objects with name. That name usually
+    depends on the context it is present or it should be globally well known
+    object.
+
+    Now, why I have chosen Smalltalk as default language? Because ...
+
+        "In essence, Smalltalk is a programming language focused on human
+        beings rather than the computer." - Alan Kinght
+
+    I do not say, that it is the best language, but it is more understandable
+    by users than other, usual, programming languages. Nevertheless, that does
+    not mean, that some day there will not be other language.
+
+The Framework
+-------------
+(this part is for mainly for developers and curious users)
+
+    This part will be something more concrete and will describe desired
+    concepts and their StepTalk objects.
+
+    Language - STLanguage provides language information and execution
+        mechanisms.
+
+    Language context - is represented by STEnvironment. Maybe not very good
+        name and it should be changed to STContext rather. Context defines
+        names for concrete objects and defines mappings of verbs (selectors).
+
+    Nouns - Objects with names. Some names should refer no non-concrete
+        objects. The meaning of such names is provided by object finders, which
+        will assign concrete object to that name, when requested.
+
+    Script - Just plain NSString.
+
+    Script execution - Concrete subclasses of STEngine will execute a script
+        written in specific language. Engines should refer to the language
+        context to find out the objects behind names refered by users and
+        provided by developers.
+        
+
+Future
+------
+    
+    What needs to be done?
+      - make it be real object glue that will join functionalities of different
+        applications
+      - provide 'script objects' where one can create an object, define its
+        behaviour with 'script methods' in any language. Make it similar to
+        prototype based language - Self. (Google for: self language)
+
+Conclusion
+----------
+    
+    I had no time to achieve this goal by implementing all I wanted and in the
+    way I wanted. Please, keep it simple and make the interface focused on
+    users.
+
+
+Any further comments, questions and suggestions are welcome.
