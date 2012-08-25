@@ -1,0 +1,9 @@
+Object Finders
+--------------
+
+`STEnvironment` provides mechanisms for named objects. Object finders are
+objects that will find an object by a name. The lookup is as follows:
+
+1. look for object in environment's object pool
+2. look for object using all environment's finders
+    

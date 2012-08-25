@@ -1,7 +1,10 @@
 GNUstep/Cocoa classes additions
--------------------------------
+===============================
 
 NSFileManager
+
+.. code-block:: objective-c
+
     + (NSString *)homeDirectory
 
     + (NSString *)homeDirectoryForUser:(NSString *)user
@@ -19,6 +22,9 @@ NSFileManager
     + (NSArray *)standardLibraryPaths
 
 Example:
+
+.. code-block:: objective-c
+
     NSFileManager searchPathForDirectories:NSLibraryDirectory 
                 inDomains:(NSUserDomainMask or: NSLocalDomainMask)
                 
